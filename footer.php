@@ -2,6 +2,7 @@
 /**
  * The template for displaying the footer
  *
+ *blää
  * Contains footer content and the closing of the #main and #page div elements.
  *
  * @package Posh Industries
