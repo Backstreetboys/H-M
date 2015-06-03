@@ -1,6 +1,6 @@
 body {
 	#wrapper {
-		width: 90%;
+		width: 85%;
 		height: auto;
 		margin-top: 20px;
 		margin-left: auto;
@@ -9,7 +9,9 @@ body {
 		.product-wrapper {
 			width: 400px;
 			height: auto;
-			float: left;
+			display: inline-block;
+			margin-left: 100px;
+			margin-bottom: 10px;
 
 		}
 	}
