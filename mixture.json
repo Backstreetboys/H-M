@@ -12,7 +12,7 @@
     "scss"
   ],
   "preprocessorScriptOutput": "js",
-  "preprocessorStyleOutput": "css",
+  "preprocessorStyleOutput": "/",
   "projectDescription": "My project description",
   "projectName": "H-M",
   "publishedId": null,
