@@ -1,8 +1,10 @@
-/*
-Theme Name: THEME NAME
-Theme URI: http://www.WEBSITEURL.SE
-Author: Posh Industries AB (Jenni Pulli)
-Author URI: http://posh.se
-Description: DESCRIPTION
-Version: 1.0
-*/
+/* line 2, scss/style.scss */
+body #wrapper {
+  width: 40%;
+  margin: 0 auto;
+}
+/* line 5, scss/style.scss */
+body #wrapper .product-wrapper {
+  width: 400px;
+  height: auto;
+}

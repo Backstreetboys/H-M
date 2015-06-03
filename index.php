@@ -1,6 +1,5 @@
-<div id="main-wrapper">
-	
-		<?php
+<?php get_header();
+
 		if(have_posts()){
 		
 			
@@ -20,6 +19,5 @@
 			}
 			
 		}
-	?>
-	
-</div>
+		
+get_footer();
