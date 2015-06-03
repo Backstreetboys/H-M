@@ -5,7 +5,8 @@
 		
 			
 			while(have_posts()){ ?>
-				<div id="product-wrapper">
+				<a href="<?= the_permalink(); ?>">
+				<div class="product-wrapper">
 					<?php
 					the_post();
 						the_title();
@@ -14,6 +15,7 @@
 						}
 						?>
 				</div>
+				</a>
 				<?php
 			}
 			
