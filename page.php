@@ -1,0 +1,1 @@
+<?php include "templates/page-template_carousel.php"; ?>
