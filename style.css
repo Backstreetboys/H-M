@@ -1,19 +1,8 @@
-/* line 2, scss/style.scss */
 body #wrapper {
   width: 85%;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
-<<<<<<< Updated upstream
-  margin-right: auto;
-}
-/* line 9, scss/style.scss */
-body #wrapper .product-wrapper {
-  width: 400px;
-  height: auto;
-  float: left;
-}
-=======
   margin-right: auto; }
   body #wrapper .product-wrapper {
     width: 400px;
@@ -21,4 +10,3 @@ body #wrapper .product-wrapper {
     display: inline-block;
     margin-left: 100px;
     margin-bottom: 10px; }
->>>>>>> Stashed changes
