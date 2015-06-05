@@ -4,20 +4,27 @@
 		
 			
 			while(have_posts()){ ?>
-				<a href="<?= the_permalink(); ?>">
+				
 				<div class="product-wrapper">
 					<?php
-					the_post();
-						the_title();
+					the_post(); ?>
+
+						<p><?= the_title(); ?></p>
+
+						<?php
 						if(has_post_thumbnail()){
 							the_post_thumbnail();
 						}
 						?>
 				</div>
-				</a>
+
 				<?php
 			}
 			
-		}
+		} ?>
+
+		<div id="single-box"></div>
+		<?php
 		
-get_footer();
+get_footer(); 
+?>
