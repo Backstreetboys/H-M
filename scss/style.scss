@@ -22,5 +22,12 @@ body {
 			width: 100%;
 			background-color: red;
 		}
+		#single-bix{
+			width: 90%;
+			height: 90%;
+			z-index: 1;
+			background-color: blue;
+			position: fixed;
+		}
 	}
 }
