@@ -1,17 +1,21 @@
 body {
+	background-image: url("img/background.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
 	#wrapper {
 		width: 85%;
 		height: auto;
 		margin-top: 20px;
 		margin-left: auto;
 		margin-right: auto;
-
 		.product-wrapper {
 			width: 400px;
 			height: auto;
 			display: inline-block;
 			margin-left: 100px;
 			margin-bottom: 10px;
+			background-color: white;
+			box-shadow: 10px 10px 5px #888888;
 		}
 	}
 }
