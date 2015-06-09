@@ -1,9 +1,14 @@
 var $ = jQuery;
 $(document).ready(function(){
 	$('#single-box').hide();
-	$('.product-wrapper').click(function(){
-		alert('BLÄÄÄÄÄÄÄÄÆ');
+
+	$.ajaxSetup({cache:false});
+	$('.post-link').click(function(){
+		var post_link = $(this).attr("href");
+
+		$('#single-box').load(post_link);
 		$('#single-box').show();
-		$('#single-box').load('wp-content/themes/H-M/single.php');
+	return false;
 	});
+	
 });

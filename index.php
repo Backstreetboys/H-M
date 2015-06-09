@@ -1,30 +1,24 @@
 <?php get_header();
 
-		if(have_posts()){
-		
+	if(have_posts()){
+		while(have_posts()){ ?>
 			
-			while(have_posts()){ ?>
-				
-				<div class="product-wrapper">
-					<?php
-					the_post(); ?>
-
-						<p><?= the_title(); ?></p>
-
-						<?php
-						if(has_post_thumbnail()){
-							the_post_thumbnail();
-						}
-						?>
-				</div>
-
+			
 				<?php
-			}
-			
-		} ?>
+				the_post(); ?>
+				 <a class="post-link" rel="<?php the_ID(); ?>" href="<?php the_permalink(); ?>">
+				 	<div class="product-wrapper">
 
-		<div id="single-box"></div>
+					<p><?= the_title(); ?></p>
+					<?php the_post_thumbnail(); ?>
+					</div>
+				
+				</a>
 		<?php
+		}	
+	} 
+	?>
+
+	<div id="single-box"></div>
 		
-get_footer(); 
-?>
+<?php get_footer();  ?>
