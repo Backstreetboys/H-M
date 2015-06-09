@@ -23,10 +23,10 @@ body #wrapper .product-wrapper {
   box-shadow: 10px 10px 5px #888888;
 }
 /* line 20, scss/style.scss */
-body #wrapper #primary-sidebar {
+body #wrapper .widget_area {
+  z-index: 1;
   height: 500px;
   width: 100%;
-  background-color: red;
 }
 /* line 25, scss/style.scss */
 body #wrapper #single-box {

@@ -8,14 +8,11 @@
  */
 get_header();
 
-        query_posts('post_type=post&post_status=publish&posts_per_page=100&paged='. get_query_var('paged'));
-
 	if( have_posts()) {
 
         while( have_posts() ) {
         the_post();
-
-	    the_post_thumbnail();
+        the_content();
 
         }
 
