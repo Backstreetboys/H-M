@@ -17,17 +17,14 @@ body {
 			background-color: white;
 			box-shadow: 10px 10px 5px #888888;
 		}
-		.widget_area {
-			z-index: 1;
-			height: 500px;
-			width: 100%;
-		}
 		#single-box{
 			width: 90%;
 			height: 90%;
 			z-index: 1;
-			background-color: blue;
-			position: fixed;
+			position: absolute;
+			#single-post{
+				
+			}
 		}
 	}
 }
