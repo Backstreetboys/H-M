@@ -1,4 +1,10 @@
 var $ = jQuery;
+function loadPage(){
+	setInterval(function(){
+		$('insta-wrapper').load('instagram.php');
+	}, 3000);
+};
+
 $(document).ready(function(){
 	$('#single-box').hide();
 
@@ -10,5 +16,5 @@ $(document).ready(function(){
 		$('#single-box').show();
 	return false;
 	});
-	
+	loadPage();
 });
