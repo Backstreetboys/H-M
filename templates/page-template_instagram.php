@@ -10,4 +10,4 @@ get_header(); ?>
 
 <div id="insta-wrapper"></div>
 
-<?php get_header(); ?>
+<?php get_footer(); ?>

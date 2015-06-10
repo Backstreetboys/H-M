@@ -1,12 +1,10 @@
 <?php 
-
 $tag = 'dog';
 $client_id = '714957dd4a4e4a94af32175858c041d3';
 
-$url = 'https://api.instagram.com/v1/tags/'.$tag.'/media/recent?client_id='.$client_id;
+$url = 'https://api.instagram.com/v1/tags/'.$tag.'/media/recent?client_id='.$client_id.'&count=20';
 
 $photos = json_decode(file_get_contents($url));
-echo "Found: " . count($photos->data) . "photos.<hr>";
 
 foreach($photos->data as $photo){
 	# generate tag list

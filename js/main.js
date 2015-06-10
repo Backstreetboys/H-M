@@ -1,8 +1,7 @@
+
 var $ = jQuery;
-function loadPage(){
-	setInterval(function(){
-		$('insta-wrapper').load('instagram.php');
-	}, 3000);
+var loadpage = function() {
+	$('#insta-wrapper').load('../instagram.php');
 };
 
 $(document).ready(function(){
@@ -10,11 +9,12 @@ $(document).ready(function(){
 
 	$.ajaxSetup({cache:false});
 	$('.post-link').click(function(){
-		var post_link = $(this).attr("href");
+		var post_link = $(this).attr('href');
 
 		$('#single-box').load(post_link);
 		$('#single-box').show();
 	return false;
 	});
-	loadPage();
+	loadpage();
+	setInterval(loadpage, 70000);
 });
