@@ -1,7 +1,7 @@
 
 var $ = jQuery;
 var loadpage = function() {
-	$('#insta-wrapper').load('../instagram.php');
+	$('#carousel').load('../instagram.php');
 };
 
 $(document).ready(function(){
@@ -16,5 +16,19 @@ $(document).ready(function(){
 	return false;
 	});
 	loadpage();
-	setInterval(loadpage, 70000);
+	setInterval(loadpage, 300000);
+});
+/*Bildspel*/
+$(function() {
+	$('#carousel').carouFredSel({
+		responsive: true,
+		scroll: 1,
+		items: {
+			height: '100%',
+			visible: {
+				min: 4,
+				max: 4
+			}
+		}
+	});
 });

@@ -6,7 +6,7 @@ body {
 }
 /* line 5, scss/style.scss */
 body #wrapper {
-  width: 85%;
+  width: 80%;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
@@ -28,4 +28,22 @@ body #wrapper #single-box {
   height: 90%;
   z-index: 1;
   position: absolute;
+}
+/* line 28, scss/style.scss */
+body #wrapper #single-box #inner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: -100px 0 0 0;
+}
+/* line 37, scss/style.scss */
+body #wrapper #single-box #carousel img {
+  height: auto;
+  border: none;
+  display: block;
+  float: left;
+  padding: 0 10px;
 }

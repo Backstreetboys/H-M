@@ -6,7 +6,9 @@ add_theme_support('post-thumbnails');
 function load_javascript_files() {
   wp_enqueue_script('jquery');
   wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array('jquery'),'',true  );
+  wp_register_script( 'carousel-js', get_template_directory_uri() . '/js/jquery.carouFredSel-6.0.4-packed.js', array('jquery'),'',true  );
   wp_enqueue_script( 'main-js' );
+  wp_enqueue_script( 'carousel-js' );
 }
 
 add_action( 'wp_enqueue_scripts', 'load_javascript_files' );

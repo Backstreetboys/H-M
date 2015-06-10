@@ -8,6 +8,9 @@
  */
 get_header(); ?>
 
-<div id="insta-wrapper"></div>
+	<div id="inner">
+		<div id="carousel">
+		</div>
+	</div>
 
 <?php get_footer(); ?>
