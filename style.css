@@ -19,10 +19,10 @@ body {
     body #wrapper #single-box {
       width: 90%;
       height: 90%;
+      margin-right: auto;
+      margin-left: auto;
       z-index: 100;
-      position: fixed;
-      top: 100;
-      float: center;
+      margin-top: -1100px;
       margin-left: auto;
       margin-right: auto;
       background-color: white; }
