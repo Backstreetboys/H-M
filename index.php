@@ -18,7 +18,7 @@
 		}	
 	} 
 	?>
-
+	<div id="items"></div>
 	<div id="single-box"></div>
 	<div id="overlay"></div>
 		
