@@ -13,6 +13,8 @@ $(document).ready(function(){
 
 		$('#single-box').load(post_link);
 		$('#single-box').show();
+		$('#overlay').show();
+		
 	return false;
 	});
 	loadpage();

@@ -14,6 +14,17 @@ while (have_posts()) { ?>
 	the_content();
 
 	the_post_thumbnail();
+	?>
+	<form action="purchase.php" method="post" id="purchase">
+		<select name="sizelist" form="purchase">
+			<option value="Small">S</option>
+			<option value="Medium">M</option>
+			<option value="Large">L</option>
+			<option value="XLarge">XL</option>
+		</select>
+		<input type="submit" value="Lägg till i varukorgen" />
+	</form>
+	<?php
 }
  ?>
 </div>
@@ -23,5 +34,7 @@ while (have_posts()) { ?>
 
 	$('#close').click(function(){
 		$('#single-box').hide();
+		$('#overlay').hide();
+
 	});
 </script>

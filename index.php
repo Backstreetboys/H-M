@@ -20,5 +20,6 @@
 	?>
 
 	<div id="single-box"></div>
+	<div id="overlay"></div>
 		
 <?php get_footer();  ?>
