@@ -27,4 +27,8 @@ function arphabet_widgets_init() {
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
+//------Start SESSION------//
+if(!session_id()){
+	session_start();
+}
 ?>
