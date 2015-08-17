@@ -16,7 +16,7 @@ while (have_posts()) { ?>
 
 	the_post_thumbnail();
 	?>
-	<form method="post" id="purchase">
+	<form id="purchase">
 		<p id="item_name"><?php the_title();?></p>
 		<select id="sizelist" form="purchase">
 			<option value="Small">S</option>
@@ -24,7 +24,7 @@ while (have_posts()) { ?>
 			<option value="Large">L</option>
 			<option value="XLarge">XL</option>
 		</select>
-		<input type="submit" value="Lägg till i varukorgen" id="btn-submit"/>
+		<input type="button" value="Lägg till i varukorgen" id="btn-submit"/>
 	</form>
 	<?php
 
@@ -34,10 +34,25 @@ while (have_posts()) { ?>
 <script type="text/javascript">
 
 	var $ = jQuery;
-
-	$('#close').click(function(){
+	//Function for hiding overlay
+	function HideOverlay() {
 		$('#single-box').hide();
 		$('#overlay').hide();
-
+	}
+	//If clicked on overlay or close-icon = hide single and close overlay
+	$('#overlay, #close').click(function(){
+		HideOverlay();
 	});
+
+	/*JSON-Stuffs*/
+	var title = $('#item_name').text();
+	var myCollection = {
+  "data": [
+  ]
+};
+$("#btn-submit").click(function(){
+	myCollection.data.push( { "name": title } );	
+});
+	console.log(myCollection);
+
 </script>

@@ -39,6 +39,4 @@ $(function() {
 		$('#overlay').hide();
 
 	});
-
-//gör en funktion för att skriva ut från json filen
 });
