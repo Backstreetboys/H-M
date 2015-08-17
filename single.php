@@ -27,10 +27,11 @@ while (have_posts()) { ?>
 		<input type="submit" value="Lägg till i varukorgen" id="btn-submit"/>
 	</form>
 	<?php
+
 }
  ?>
 </div>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 
 	var $ = jQuery;
 
@@ -39,15 +40,4 @@ while (have_posts()) { ?>
 		$('#overlay').hide();
 
 	});
-
-	$("#btn-submit").click(function(){
-		var item = '{"name": "' . $("#item_name").text(); . '"', "size"':"' . $("#sizelist option:selected").text(); . '"}';
-		var obj = JSON.parse(item);
-
-		$("#items").innerHTML =
-		obj.name + "<br>" +
-		obj.size;
-
-
-	});
-</script> -->
+</script>

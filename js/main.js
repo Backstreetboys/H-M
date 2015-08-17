@@ -40,16 +40,5 @@ $(function() {
 
 	});
 
-	$("#btn-submit").click(function(){
-		var name = $("#item_name").text();
-		var size = $("#sizelist option:selected").text(); 
-		var item = '{"name": "' . name . '"', "size"':"' . size . '"}';
-		var obj = JSON.parse(item);
-
-		$("#items").innerHTML =
-		obj.name + "<br>" +
-		obj.size;
-
-
-	});
+//gör en funktion för att skriva ut från json filen
 });
