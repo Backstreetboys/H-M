@@ -1,4 +1,9 @@
 <?php
+/*
+* Hides the admin bar
+*/
+add_filter('show_admin_bar', '__return_false');
+
 /*Adds support for thumbnails*/
 add_theme_support('post-thumbnails');
 
