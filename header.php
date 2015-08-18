@@ -38,5 +38,7 @@
 
 		<div id="header">
 			<div id="logo"></div>
-			<div id="shoppingcart"></div>
+			<div id="shoppingcart">
+				<div id="item-holder"></div>
+			</div>
 		</div>
