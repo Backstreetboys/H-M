@@ -1,14 +1,5 @@
 <?php get_header();
-$_SESSION['cart_items'] = array(
-	array(
-		'item_id'   => 43,
-		'item_name' => 'My Product Name'
-	),
-	array(
-		'item_id'   => 22,
-		'item_name' => 'My Second Product Name'
-	)	
-);
+
 	if(have_posts()){
 		while(have_posts()){ ?>
 			

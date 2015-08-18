@@ -1,3 +1,8 @@
+<?php session_start(); 
+if(!isset($_SESSION['shoppingcart'])){
+	$_SESSION['shoppingcart'] = '{ "data": [] }';
+}
+?>
 <?php get_header(); ?>
 <?php $post = get_post($_POST['id']); ?>
 
@@ -46,12 +51,23 @@ while (have_posts()) { ?>
 
 	/*JSON-Stuffs*/
 	var title = $('#item_name').text();
-	var myCollection = {
-  "data": [
-  ]
-};
+	var myCollection = <?= $_SESSION['shoppingcart']; ?>;
+	alert(JSON.stringify(myCollection));
+
 $("#btn-submit").click(function(){
 	myCollection.data.push( { "name": title } );	
+	$.ajax({
+		url: "<?=get_template_directory_uri();?>/basket.php",
+		type: "POST",
+		data: "update=" + JSON.stringify(myCollection),
+		success:function(data){
+			alert(data);
+		}
+
+	}).done(function(){
+		console.log('Ajax success!');
+	});
+
 });
 	console.log(myCollection);
 

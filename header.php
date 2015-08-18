@@ -35,3 +35,8 @@
 <body <?php body_class(); ?>>
 
 	<div id="wrapper">
+
+		<div id="header">
+			<div id="logo"></div>
+			<div id="shoppingcart"></div>
+		</div>
