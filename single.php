@@ -9,7 +9,7 @@ if(!isset($_SESSION['shoppingcart'])){
 <div id="single-post post-<?= the_ID(); ?>">
 <?php 
 while (have_posts()) { ?>
-
+<?php $price = get_post_meta( get_the_ID(), 'product_price', true ); ?>
 	<p id="close">Close &ZHcy;</p>
 	<?php
 
@@ -19,8 +19,9 @@ while (have_posts()) { ?>
 
 	the_content();
 
-	the_post_thumbnail();
-	?>
+	the_post_thumbnail(); ?>
+	<p>Pris: <?php echo $price; ?> kr<p>
+	
 	<form id="purchase">
 		<p id="item_name"><?php the_title();?></p>
 		<select id="sizelist" form="purchase">
