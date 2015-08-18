@@ -1,68 +1,75 @@
-/* line 1, scss/style.scss */
 body {
   background-image: url("img/background.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-/* line 5, scss/style.scss */
-body #wrapper {
-  width: 80%;
-  height: auto;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 11, scss/style.scss */
-body #wrapper #overlay {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  left: 50%;
-  top: 50%;
-  position: fixed;
-  z-index: 99;
-  height: 1400px;
-  margin-top: -700px;
-  width: 2400px;
-  margin-left: -1200px;
-}
-/* line 25, scss/style.scss */
-body #wrapper .product-wrapper {
-  width: 400px;
-  height: auto;
-  display: inline-block;
-  margin-left: 100px;
-  margin-bottom: 10px;
-  background-color: white;
-  box-shadow: 10px 10px 5px #888888;
-}
-/* line 34, scss/style.scss */
-body #wrapper #single-box {
-  border: solid 1px black;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  background-color: white;
-  z-index: 100;
-  height: 500px;
-  margin-top: -250px;
-  width: 800px;
-  margin-left: -400px;
-}
-/* line 51, scss/style.scss */
-body #wrapper #inner {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin: -100px 0 0 0;
-}
-/* line 60, scss/style.scss */
-body #wrapper #carousel img {
-  height: auto;
-  border: none;
-  display: block;
-  float: left;
-  padding: 0 10px;
-}
+  background-attachment: fixed; }
+  body #wrapper {
+    width: 80%;
+    height: auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto; }
+    body #wrapper #header {
+      width: 100%;
+      height: 55px;
+      top: 0;
+      background-color: white;
+      position: fixed;
+      left: 0; }
+      body #wrapper #header #Header-logo {
+        width: 40px;
+        height: 50px;
+        display: block;
+        position: absolute;
+        margin-left: 48.5%; }
+      body #wrapper #header #shoppingcart-img {
+        width: 50px;
+        height: 50px;
+        right: 0;
+        display: inline;
+        position: absolute;
+        margin-top: 2.5px;
+        margin-right: 5px; }
+    body #wrapper #overlay {
+      display: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      left: 50%;
+      top: 50%;
+      position: fixed;
+      z-index: 99;
+      height: 1400px;
+      margin-top: -700px;
+      width: 2400px;
+      margin-left: -1200px; }
+    body #wrapper .product-wrapper {
+      width: 400px;
+      height: auto;
+      display: inline-block;
+      margin-left: 100px;
+      margin-bottom: 10px;
+      background-color: white;
+      box-shadow: 10px 10px 5px #888888; }
+    body #wrapper #single-box {
+      border: solid 1px black;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      background-color: white;
+      z-index: 100;
+      height: 500px;
+      margin-top: -250px;
+      width: 800px;
+      margin-left: -400px; }
+    body #wrapper #inner {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin: -100px 0 0 0; }
+    body #wrapper #carousel img {
+      height: auto;
+      border: none;
+      display: block;
+      float: left;
+      padding: 0 10px; }

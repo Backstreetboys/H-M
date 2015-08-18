@@ -33,12 +33,15 @@
 </head>
 
 <body <?php body_class(); ?>>
+	
 
 	<div id="wrapper">
-
 		<div id="header">
-			<div id="logo"></div>
-			<div id="shoppingcart">
-				<div id="item-holder"></div>
+			<img id="Header-logo" src="<?= get_template_directory_uri();?>/img/HMlogo.png" />
+			<img id="shoppingcart-img" src="<?= get_template_directory_uri(); ?>/img/shoppingbag.png">
+			
+			<div id="item-holder">
 			</div>
+
 		</div>
+
