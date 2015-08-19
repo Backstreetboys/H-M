@@ -8,7 +8,7 @@
  * @subpackage PACKAGE NAME
  * @since PACKAGE VERSION
  */
-
+session_start();
 ?><!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
@@ -37,11 +37,24 @@
 
 	<div id="wrapper">
 		<div id="header">
+
 			<img id="Header-logo" src="<?= get_template_directory_uri();?>/img/HMlogo.png" />
 			<img id="shoppingcart-img" src="<?= get_template_directory_uri(); ?>/img/shoppingbag.png">
 			
-			<div id="item-holder">
-			</div>
-
 		</div>
+		<div id="item-holder">
+			<?php
+			$item = json_decode($_SESSION['shoppingcart'], true);
+			foreach ($item['data'] as $result) { ?>
+
+				<ul>
+					<li> <?php echo $result['name']; ?></li><br>
+				</ul>
+				
+			<?php
+			}
+			?>
+			<h1><a href="<?= get_template_directory_uri(); ?>/checkout">checkout</a></h1>
+		</div>
+
 

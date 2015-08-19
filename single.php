@@ -1,9 +1,10 @@
-<?php session_start(); 
+<?php get_header();
+ //session_start(); 
 if(!isset($_SESSION['shoppingcart'])){
 	$_SESSION['shoppingcart'] = '{ "data": [] }';
 }
 ?>
-<?php get_header(); ?>
+
 <?php $post = get_post($_POST['id']); ?>
 
 <div id="single-post post-<?= the_ID(); ?>">

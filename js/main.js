@@ -3,8 +3,16 @@ var $ = jQuery;
 var loadpage = function() {
 	$('#carousel').load('../instagram.php');
 };
+function showItem(){
+	$('#shoppingcart-img').click(function(){
+		$('#item-holder').slideToggle();
+	});
+};
 
 $(document).ready(function(){
+
+	showItem();
+
 	$('#single-box').hide();
 
 	$.ajaxSetup({cache:false});
