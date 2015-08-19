@@ -48,7 +48,7 @@ session_start();
 			foreach ($item['data'] as $result) { ?>
 
 				<ul>
-					<li> <?php echo $result['name']; ?></li><br>
+					<li> <?php echo $result['name']; ?></li>
 				</ul>
 				
 			<?php
