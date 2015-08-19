@@ -129,7 +129,6 @@ function myplugin_save_meta_box_data( $post_id ) {
 	update_post_meta( $post_id, 'product_price', $my_data );
 }
 add_action( 'save_post', 'myplugin_save_meta_box_data' );
-
 //------Start SESSION------//
 if(!session_id()){
 	session_start();
