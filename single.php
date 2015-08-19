@@ -41,6 +41,10 @@ while (have_posts()) { ?>
 <script type="text/javascript">
 
 	var $ = jQuery;
+	//functino for reloading the item list
+	function loadItemList() {
+	$('#item-holder').load('list.php');
+};
 	//Function for hiding overlay
 	function HideOverlay() {
 		$('#single-box').hide();
@@ -52,9 +56,9 @@ while (have_posts()) { ?>
 	});
 
 	/*JSON-Stuffs*/
+	
 	var title = $('#item_name').text();
 	var myCollection = <?= $_SESSION['shoppingcart']; ?>;
-	alert(JSON.stringify(myCollection));
 
 $("#btn-submit").click(function(){
 	myCollection.data.push( { "name": title } );	
@@ -63,14 +67,14 @@ $("#btn-submit").click(function(){
 		type: "POST",
 		data: "update=" + JSON.stringify(myCollection),
 		success:function(data){
-			alert(data);
+			loadItemList();
 		}
 
 	}).done(function(){
-		console.log('Ajax success!');
 	});
 
 });
-	console.log(myCollection);
+
+
 
 </script>
