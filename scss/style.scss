@@ -64,7 +64,7 @@ body {
 			width: 2400px;
 			margin-left: -1200px;
 		}
-		.product-wrapper {
+		#product-wrapper {
 			width: 400px;
 			height: auto;
 			display: inline-block;
@@ -73,6 +73,7 @@ body {
 			background-color: white;
 			box-shadow: 10px 10px 5px #888888;
 		}
+
 		#single-box{
 			border: solid 1px black;
 			position: fixed;
