@@ -1,4 +1,13 @@
 <?php get_header(); ?>
+		<div id="categories">
+			<?php
+			$cat = get_query_var('cat');
+
+			foreach(get_categories('exclude=1') as $category)	{
+				echo '<li id="item-' . $category->name.'"><a href="#">' . $category->name.'</a></li>';
+			}
+			?>
+		</div>
 <div id="isotope">
 	<?php
 	if(have_posts()){

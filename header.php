@@ -45,14 +45,5 @@ session_start();
 		<div id="item-holder">
 			<h1><a href="<?= get_template_directory_uri(); ?>/checkout">checkout</a></h1>
 		</div>
-		<div id="categories">
-			<?php
-			$cat = get_query_var('cat');
-
-			foreach(get_categories('exclude=1') as $category)	{
-				echo '<li id="item-' . $category->name.'"><a href="#">' . $category->name.'</a></li>';
-			}
-			?>
-		</div>
 
 
