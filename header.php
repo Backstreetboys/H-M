@@ -43,17 +43,6 @@ session_start();
 			
 		</div>
 		<div id="item-holder">
-			<?php
-			$item = json_decode($_SESSION['shoppingcart'], true);
-			foreach ($item['data'] as $result) { ?>
-
-				<ul>
-					<li> <?php echo $result['name']; ?></li>
-				</ul>
-				
-			<?php
-			}
-			?>
 			<h1><a href="<?= get_template_directory_uri(); ?>/checkout">checkout</a></h1>
 		</div>
 		<div id="categories">

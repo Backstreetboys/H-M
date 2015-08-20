@@ -8,9 +8,12 @@ function showItem(){
 		$('#item-holder').slideToggle();
 	});
 };
+function loadItemList() {
+	$('#item-holder').load('list.php');
+};
 
 $(document).ready(function(){
-
+	loadItemList();
 	showItem();
 
 	$('#single-box').hide();
