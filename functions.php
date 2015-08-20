@@ -13,8 +13,10 @@ function load_javascript_files() {
   wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array('jquery'),'',true  );
   wp_register_script( 'basket-json', get_template_directory_uri() . 'basket.json');
   wp_register_script( 'carousel-js', get_template_directory_uri() . '/js/jquery.carouFredSel-6.0.4-packed.js', array('jquery'),'',true  );
+  wp_register_script( 'isotope-js', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'),'',true  );
   wp_enqueue_script( 'main-js' );
   wp_enqueue_script( 'carousel-js' );
+  wp_enqueue_script( 'isotope-js' );
 }
 
 add_action( 'wp_enqueue_scripts', 'load_javascript_files' );
@@ -132,5 +134,20 @@ add_action( 'save_post', 'myplugin_save_meta_box_data' );
 //------Start SESSION------//
 if(!session_id()){
 	session_start();
+}
+add_filter('wp_list_categories', 'add_slug_class_wp_list_categories');
+function add_slug_class_wp_list_categories($list) {
+
+$cats = get_categories('hide_empty=0');
+	foreach($cats as $cat) {
+	$find = 'cat-item-' . $cat->term_id . '"';
+	$replace = 'item-' . $cat->slug . ' item-' . $cat->term_id . '"';
+	$list = str_replace( $find, $replace, $list );
+	$find = 'cat-item-' . $cat->term_id . ' ';
+	$replace = 'item-' . $cat->slug . ' item-' . $cat->term_id . ' ';
+	$list = str_replace( $find, $replace, $list );
+	}
+
+return $list;
 }
 ?>

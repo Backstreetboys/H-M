@@ -9,6 +9,11 @@ body {
 		margin-top: 70px;
 		margin-left: auto;
 		margin-right: auto;
+
+		#categories {
+			margin-top: 20px;
+		}
+
 		#header{
 			width: 100%;
 			height: 55px;
@@ -33,10 +38,7 @@ body {
 				position: absolute;
 				margin-top: 2.5px;
 				margin-right: 5px;
-
 			}
-			
-			
 		}
 		#item-holder{
 			background-color: white;
