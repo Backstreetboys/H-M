@@ -49,8 +49,8 @@ session_start();
 			<?php
 			$cat = get_query_var('cat');
 
-			foreach(get_categories('parent=0&exclude=15') as $category)	{
-				echo '<li class="item-' . $category->name.'"><a class="name" href="#">' . $category->name.'</a></li>';
+			foreach(get_categories('exclude=1') as $category)	{
+				echo '<li id="item-' . $category->name.'"><a href="#">' . $category->name.'</a></li>';
 			}
 			?>
 		</div>

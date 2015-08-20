@@ -11,7 +11,23 @@ body {
 		margin-right: auto;
 
 		#categories {
+			height: 100px;
+			width: 100%;
 			margin-top: 20px;
+			margin-bottom: 20px;
+
+			li {
+				list-style-type: none;
+				float: left;
+				margin-left: 10px;
+				display: inline-block;
+				background-color: orange;
+			}
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
 		}
 
 		#header{

@@ -52,17 +52,18 @@ $(function() {
 		$('#overlay').hide();
 
 	});
-
-$("#wrapper").isotope({
+/**********Isotope-filtering***********/
+$("#categories").prepend('<li id="item-*"><a href="#">All</a></li>');
+$("#isotope").isotope({
 	  itemSelector: 'div',
 	  layoutMode: 'fitRows'
 	});
 
 	imageFilter();
 	function imageFilter() {
-		$("li").click(function(e) {
+		$("#categories li").click(function(e) {
 			//Lägg till klassen "current" på den <li> man klickat på och ta bort från de andra <li> 
-			$("li").each(function(){
+			$("#categories li").each(function(){
 				$(this).removeClass("current");
 			});
 			
@@ -71,9 +72,8 @@ $("#wrapper").isotope({
 			//Ta reda på vilket id-namn den aktuella <li>:n har
 			var itemId = e.currentTarget.id;
 			itemId = itemId.replace("item-", "");
-
 			// Använd ID för att filtrera
-			$("#wrapper").isotope({ filter: '.category-'+itemId });
+			$("#isotope").isotope({ filter: '.category-'+itemId });
 		});
 	}
 	
