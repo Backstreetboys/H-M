@@ -24,7 +24,10 @@ get_header(); ?>
 			?>
 
 	</div>
-	<div></div>
+	<div id="">
+		<button>Pay</button>
+
+	</div>
 
 </div>
 

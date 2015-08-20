@@ -56,7 +56,6 @@ while (have_posts()) { ?>
 	});
 
 	/*JSON-Stuffs*/
-	
 	var title = $('#item_name').text();
 	var myCollection = <?= $_SESSION['shoppingcart']; ?>;
 

@@ -12,6 +12,7 @@ function loadItemList() {
 	$('#item-holder').load('list.php');
 };
 
+
 $(document).ready(function(){
 	loadItemList();
 	showItem();
@@ -30,6 +31,7 @@ $(document).ready(function(){
 	});
 	loadpage();
 	setInterval(loadpage, 300000);
+
 });
 /*Bildspel*/
 $(function() {
@@ -76,3 +78,4 @@ $("#wrapper").isotope({
 	}
 	
 });
+
