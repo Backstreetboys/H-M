@@ -45,7 +45,10 @@ session_start();
 		<div id="item-holder">
 			<h1><a href="<?= get_template_directory_uri(); ?>/checkout">checkout</a></h1>
 		</div>
-		<div id="categories">
+		<!--Checks if the user is on the home page. If the user is on the home page the Isitope buttons will be looped outs-->
+		<?php if(is_home()){ ?>
+
+			<div id="categories">
 			<?php
 			$cat = get_query_var('cat');
 
@@ -54,5 +57,12 @@ session_start();
 			}
 			?>
 		</div>
+
+		<?php
+		}else{
+
+		}
+		?>
+		
 
 
