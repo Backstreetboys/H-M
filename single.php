@@ -11,7 +11,6 @@ if(!isset($_SESSION['shoppingcart'])){
 while (have_posts()) { ?>
 <?php $price = get_post_meta( get_the_ID(), 'product_price', true ); ?>
 	<p id="close">Close &ZHcy;</p>
-<<<<<<< HEAD
 	<div class="product_image">
 		<?php 
 			the_post_thumbnail();

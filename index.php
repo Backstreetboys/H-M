@@ -1,5 +1,8 @@
 <?php get_header(); ?>
-		<div id="categories">
+		<!--Checks if the user is on the home page. If the user is on the home page the Isitope buttons will be looped outs-->
+		<?php if(is_home()){ ?>
+
+			<div id="categories">
 			<?php
 			$cat = get_query_var('cat');
 
@@ -8,6 +11,12 @@
 			}
 			?>
 		</div>
+
+		<?php
+		}else{
+
+		}
+		?>
 <div id="isotope">
 	<?php
 	if(have_posts()){
