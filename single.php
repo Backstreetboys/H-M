@@ -12,27 +12,30 @@ if(!isset($_SESSION['shoppingcart'])){
 while (have_posts()) { ?>
 <?php $price = get_post_meta( get_the_ID(), 'product_price', true ); ?>
 	<p id="close">Close &ZHcy;</p>
-	<?php
-
-	the_post();
-
-	the_title();
-
-	the_content();
-
-	the_post_thumbnail(); ?>
-	<p>Pris: <?php echo $price; ?> kr<p>
-	
-	<form id="purchase">
-		<p id="item_name"><?php the_title();?></p>
-		<select id="sizelist" form="purchase">
-			<option value="Small">S</option>
-			<option value="Medium">M</option>
-			<option value="Large">L</option>
-			<option value="XLarge">XL</option>
-		</select>
-		<input type="button" value="Lägg till i varukorgen" id="btn-submit"/>
-	</form>
+	<div class="product_image">
+		<?php 
+			the_post_thumbnail();
+		?>
+	</div>
+	<div class="product_info">
+		<?php
+			the_post();
+			?>
+			<h1><?php the_title(); ?></h1>
+			<p class="product_text"><?php the_content(); ?></p>
+			<p>Pris: <?php echo $price; ?> kr<p><br>
+		<form id="purchase">
+			<select id="sizelist" form="purchase">
+				<option value="Small">S</option>
+				<option value="Medium">M</option>
+				<option value="Large">L</option>
+				<option value="XLarge">XL</option>
+			</select><br>
+			<button type="submit" id="btn-submit">
+				Lägg till i varukorgen<i class="fa fa-shopping-cart"></i>
+			</button>
+		</form>
+	</div>
 	<?php
 
 }

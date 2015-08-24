@@ -19,16 +19,21 @@ body {
 			margin-bottom: 20px;
 
 			li {
+				width: 110px;
+				border-radius: 5px;
+				height: 30px;
 				list-style-type: none;
 				float: left;
 				margin-left: 10px;
 				display: inline-block;
-				background-color: orange;
+				background-color: #0096db;
 			}
 
 			a {
 				text-decoration: none;
-				color: black;
+				color: white;
+				text-align: center;
+				text-transform: uppercase;
 			}
 		}
 
@@ -107,8 +112,15 @@ body {
 
 			width: 800px;
 			margin-left: -400px;
-			#single-post{
-				
+			.product_image {
+				float: left;
+				position: relative;
+			}
+			.product_info {
+				float: left;
+				position: relative;
+				width: 300px;
+				margin-left: 100px;
 			}
 		}	
 		#inner {
