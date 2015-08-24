@@ -20,7 +20,7 @@ while (have_posts()) { ?>
 		<?php
 			the_post();
 			?>
-			<h1><?php the_title(); ?></h1>
+			<h1 id="item_name"><?php the_title(); ?></h1>
 			<p class="product_text"><?php the_content(); ?></p>
 			<p>Pris: <?php echo $price; ?> kr<p><br>
 		<form id="purchase">
