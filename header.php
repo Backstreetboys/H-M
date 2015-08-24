@@ -46,5 +46,24 @@ session_start();
 		<div id="item-holder">
 			<h1><a href="<?= get_template_directory_uri(); ?>/checkout">checkout</a></h1>
 		</div>
+		<!--Checks if the user is on the home page. If the user is on the home page the Isitope buttons will be looped outs-->
+		<?php if(is_home()){ ?>
+
+			<div id="categories">
+			<?php
+			$cat = get_query_var('cat');
+
+			foreach(get_categories('exclude=1') as $category)	{
+				echo '<li id="item-' . $category->name.'"><a href="#">' . $category->name.'</a></li>';
+			}
+			?>
+		</div>
+
+		<?php
+		}else{
+
+		}
+		?>
+		
 
 

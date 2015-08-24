@@ -1,5 +1,4 @@
-<?php get_header();
- //session_start(); 
+<?php  
 if(!isset($_SESSION['shoppingcart'])){
 	$_SESSION['shoppingcart'] = '{ "data": [] }';
 }
@@ -12,6 +11,7 @@ if(!isset($_SESSION['shoppingcart'])){
 while (have_posts()) { ?>
 <?php $price = get_post_meta( get_the_ID(), 'product_price', true ); ?>
 	<p id="close">Close &ZHcy;</p>
+<<<<<<< HEAD
 	<div class="product_image">
 		<?php 
 			the_post_thumbnail();
@@ -59,17 +59,21 @@ while (have_posts()) { ?>
 	});
 
 	/*JSON-Stuffs*/
+	
 	var title = $('#item_name').text();
 	var myCollection = <?= $_SESSION['shoppingcart']; ?>;
 
 $("#btn-submit").click(function(){
-	myCollection.data.push( { "name": title } );	
+	//puts the selected size in the variabel size and puts it in the array.
+	var size = $( '#sizelist :selected' ).text();
+	myCollection.data.push( { "name": title, "size": size, "price": <?= $price ?> } );	
 	$.ajax({
 		url: "<?=get_template_directory_uri();?>/basket.php",
 		type: "POST",
 		data: "update=" + JSON.stringify(myCollection),
 		success:function(data){
 			loadItemList();
+			alert('fucking success');
 		}
 
 	}).done(function(){
