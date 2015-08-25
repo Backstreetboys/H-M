@@ -53,7 +53,6 @@ $(function() {
 
 	});
 /**********Isotope-filtering***********/
-$("#categories").prepend('<li id="item-*"><a href="#">All</a></li>');
 $("#isotope").isotope({
 	  itemSelector: 'div',
 	  layoutMode: 'fitRows'
