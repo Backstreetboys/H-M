@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-		<!--Checks if the user is on the home page. If the user is on the home page the Isitope buttons will be looped outs-->
+		<!--Checks if the user is on the home page. If the user is on the home page the Isitope buttons will be looped outs.
+			And if the user is not on the hopme page it will not apper.-->
 		<?php if(is_home()){ ?>
 
+			<!-- KOMMENTERA HÄR ERIK!!!!!!!! -->
 			<div id="categories">
 			<?php
 			$cat = get_query_var('cat');
@@ -17,6 +19,7 @@
 
 		}
 		?>
+<!-- KOMMENTERA HÄR ERIK!!!!!!!!!! -->
 <div id="isotope">
 	<?php
 	if(have_posts()){
@@ -36,6 +39,7 @@
 		}	
 	}
 	?>
+	<!-- KOMMENTERA HÄR ERIK!!!!!!!!! -->
 </div>
 	<div id="items"></div>
 	<div id="single-box"></div>

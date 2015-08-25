@@ -1,4 +1,4 @@
-
+// defines jQuery to $
 var $ = jQuery;
 var loadpage = function() {
 	$('#carousel').load('../instagram.php');

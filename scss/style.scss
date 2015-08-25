@@ -1,5 +1,5 @@
 body {
-	background-image: url("img/bakgrund2.jpg");
+	background-image: url("img/bajsBild.jpg");
 	background-size: 100vw 100vh;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -139,6 +139,12 @@ body {
 			float: left;
 			padding: 0 10px;
 		}
-		
 	}
+	#page-not-found{
+			img{
+				width: 100px;
+				height:auto;
+        		width:100%;
+			}
+		}
 }

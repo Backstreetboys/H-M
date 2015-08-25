@@ -36,16 +36,29 @@ session_start();
 <body <?php body_class(); ?>>
 	
 
-	<div id="wrapper">
-		<div id="header">
+	<div id="wrapper"><!-- This div wrapps the hole site -->
+		<div id="header"><!-- This div wrappes everything in header -->
 
+			<!-- Image link for the logo image -->
 			<img id="Header-logo" src="<?= get_template_directory_uri();?>/img/HMlogo.png" />
-			<img id="shoppingcart-img" src="<?= get_template_directory_uri(); ?>/img/shoppingbag.png">
+		
+			<?php 
+			//Checks if the user is on the home page. If you the user is that, the icon for the shopping bag will apper.
+			//If the user is not on the home page the icon will not apper.
+			if(is_home()) { ?>
+				<!-- Image link for the shopping bag icon -->
+				<img id="shoppingcart-img" src="<?= get_template_directory_uri(); ?>/img/shoppingbag.png">
+
+			<?php }else{
+
+			} ?>
 			
-		</div>
-		<div id="item-holder">
+			
+		</div><!-- Wrapper div ends -->
+		<div id="item-holder"><!-- This div contains all the addes products that will be shown when you push the shopping bag icon -->
+			<!-- links to the checkout.php when you whant to check out -->
 			<h1><a href="<?= get_template_directory_uri(); ?>/checkout">checkout</a></h1>
-		</div>
+		</div><!-- Ends the item holder div -->
 		
 
 

@@ -4,14 +4,17 @@
 */
 add_filter('show_admin_bar', '__return_false');
 
-/*Adds support for thumbnails*/
+/*
+* Adds support for thumbnails 
+*/
 add_theme_support('post-thumbnails');
 
-/*Loads javascript/jQuery*/
+/*
+* Loads javascript files, jQuery, Carousel libery and Isotope libery.
+*/
 function load_javascript_files() {
   wp_enqueue_script('jquery');
   wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array('jquery'),'',true  );
-  wp_register_script( 'basket-json', get_template_directory_uri() . 'basket.json');
   wp_register_script( 'carousel-js', get_template_directory_uri() . '/js/jquery.carouFredSel-6.0.4-packed.js', array('jquery'),'',true  );
   wp_register_script( 'isotope-js', get_template_directory_uri() . '/js/isotope.pkgd.min.js', array('jquery'),'',true  );
   wp_enqueue_script( 'main-js' );
@@ -20,23 +23,9 @@ function load_javascript_files() {
 }
 
 add_action( 'wp_enqueue_scripts', 'load_javascript_files' );
-/*Widget*/
-function arphabet_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Home right sidebar',
-		'id'            => 'home_right_1',
-		'before_widget' => '<div class="widget_area">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
-	) );
-
-}
-add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 /**
- * Adds a box to the main column on the Post and Page edit screens.
+ * Adds a box to the main column on the Post and Page edit screen, where you can put in the price for the product.
  */
 function myplugin_add_meta_box() {
 
@@ -71,7 +60,7 @@ function myplugin_meta_box_callback( $post ) {
 	$value = get_post_meta( $post->ID, 'product_price', true );
 
 	echo '<label for="myplugin_new_field">';
-	_e( 'Pris', 'myplugin_textdomain' );
+	_e( 'Price', 'myplugin_textdomain' );
 	echo '</label> ';
 	echo '<input type="text" id="myplugin_new_field" name="myplugin_new_field" value="' . esc_attr( $value ) . '" size="25" />' . ' kr';
 }
@@ -131,10 +120,10 @@ function myplugin_save_meta_box_data( $post_id ) {
 	update_post_meta( $post_id, 'product_price', $my_data );
 }
 add_action( 'save_post', 'myplugin_save_meta_box_data' );
-//------Start SESSION------//
-if(!session_id()){
-	session_start();
-}
+
+/*
+* ERIK LÄGG TILL EN KOMMENTAR FÖR I HEÖVETE!!!!!!!!!!
+*/
 add_filter('wp_list_categories', 'add_slug_class_wp_list_categories');
 function add_slug_class_wp_list_categories($list) {
 
