@@ -122,7 +122,7 @@ function myplugin_save_meta_box_data( $post_id ) {
 add_action( 'save_post', 'myplugin_save_meta_box_data' );
 
 /*
-* ERIK LÄGG TILL EN KOMMENTAR FÖR I HEÖVETE!!!!!!!!!!
+* Changes the wp_list_categories to add another class used in index.php with isotope filtering
 */
 add_filter('wp_list_categories', 'add_slug_class_wp_list_categories');
 function add_slug_class_wp_list_categories($list) {

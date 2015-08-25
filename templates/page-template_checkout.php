@@ -29,7 +29,7 @@ get_header(); ?>
 
 	</div>
 	<div id="">
-		<button>Pay</button>
+		<a href="index.php?page_id=228">Betala</a>
 
 	</div>
 

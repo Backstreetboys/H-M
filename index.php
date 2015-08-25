@@ -3,7 +3,7 @@
 			And if the user is not on the hopme page it will not apper.-->
 		<?php if(is_home()){ ?>
 
-			<!-- KOMMENTERA HÄR ERIK!!!!!!!! -->
+			<!-- Loops out att categories used and excludes the "uncategorized" from the list -->
 			<div id="categories">
 			<?php
 			$cat = get_query_var('cat');
@@ -19,7 +19,7 @@
 
 		}
 		?>
-<!-- KOMMENTERA HÄR ERIK!!!!!!!!!! -->
+<!-- Display all images with classes (classes added from functions.php) -->
 <div id="isotope">
 	<?php
 	if(have_posts()){

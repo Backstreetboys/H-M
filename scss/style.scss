@@ -139,6 +139,20 @@ body {
 			float: left;
 			padding: 0 10px;
 		}
+
+		.loading {
+			height: 200px;
+			width: 200px;
+			background-image: url("img/loading1.gif");
+			background-repeat: none;
+			margin: 0 auto;
+		}
+			.loading_text {
+				width: 200px;
+				height: 40px;
+				margin: 0 auto;
+				text-align: center;
+			}
 	}
 	#page-not-found{
 			img{
