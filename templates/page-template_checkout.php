@@ -10,15 +10,16 @@ get_header(); ?>
 
 <div id="checkout-list">
 
+	<div id="checkout-cat">
+		<h1 id="cat-1">Product</h1> <h1 id="cat-2">Size</h1> <h1 id="cat-3">Price</h1></h1>
+	</div>
 	<div id="item-list">
-		<h1>Product</h1><h1>Size</h1><h1>price</h1>
-
 		<?php
 		$sum = 0;
 		$item = json_decode($_SESSION['shoppingcart'], true);
 			foreach ($item['data'] as $result) { ?>
 
-				<p><?php echo $result['name']; ?></p><p> <?php echo $result['size']; ?></p><p><?php echo $result['price']; ?>kr</p><br>
+				<p id="checkout-product-info"><?php echo $result['name']; ?> <span id="span1"><?php echo $result['size']; ?></span> <span id="span2"><?php echo $result['price']; ?>kr</span></p><br>
 				
 				
 			<?php
@@ -28,7 +29,7 @@ get_header(); ?>
 			?>
 
 	</div>
-	<div id="">
+	<div id="pay">
 		<a href="index.php?page_id=228">Betala</a>
 
 	</div>
