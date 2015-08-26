@@ -433,36 +433,48 @@ body #page-not-found img {
       margin: 0 auto;
       text-align: center; }
     body #wrapper #checkout-list {
-      background-color: rgba(255, 255, 255, 0.7); }
-      body #wrapper #checkout-list #checkout-cat {
-        margin: 15px;
-        font-family: helvetica;
+      background-color: rgba(255, 255, 255, 0.7);
+      min-height: 400px; }
+      body #wrapper #checkout-list .checkout-table {
+        margin: 10px;
+        width: 98%;
         text-align: left;
-        display: inline-block;
-        width: 100%; }
-        body #wrapper #checkout-list #checkout-cat #cat-1 {
+        border-collapse: collapse; }
+        body #wrapper #checkout-list .checkout-table .table-head th {
+          padding-bottom: 30px;
           font-family: helvetica;
-          text-align: left;
-          display: inline-block;
-          width: 30%; }
-        body #wrapper #checkout-list #checkout-cat #cat-2 {
-          text-align: center;
-          top: 0;
-          width: 30%; }
-        body #wrapper #checkout-list #checkout-cat #cat-3 {
-          float: right;
-          top: 0;
-          width: 30%; }
-      body #wrapper #checkout-list #item-list #checkout-product-info {
-        border-bottom: 1px solid black;
-        font-family: helvetica;
-        font-size: 25px; }
-        body #wrapper #checkout-list #item-list #checkout-product-info #span1 {
-          margin-left: auto;
-          margin-right: auto;
-          width: 90%; }
-        body #wrapper #checkout-list #item-list #checkout-product-info #span2 {
-          float: right; }
+          font-size: 30px; }
+        body #wrapper #checkout-list .checkout-table .table-body {
+          border-bottom: 1px solid black;
+          margin-bottom: 20px; }
+          body #wrapper #checkout-list .checkout-table .table-body td {
+            font-family: helvetica;
+            font-size: 20px;
+            padding-top: 20px; }
+          body #wrapper #checkout-list .checkout-table .table-body #table-button button {
+            margin-top: 25px;
+            height: 45px;
+            float: right;
+            background-color: #FF0000;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            text-decoration: none;
+            outline: none;
+            border-bottom: 5px solid #D40000;
+            border-left: 2px solid #D40000; }
+          body #wrapper #checkout-list .checkout-table .table-body #table-button button:active {
+            margin-top: 25px;
+            height: 45px;
+            float: right;
+            background-color: #FF0000;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            text-decoration: none;
+            outline: none;
+            border-top: 4px solid #D40000;
+            border-right: 2px solid #D40000; }
   body #page-not-found img {
     width: 100px;
     height: auto;
