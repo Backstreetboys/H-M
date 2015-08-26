@@ -36,6 +36,7 @@ while (have_posts()) {
 			<p class="product_text"><?php the_content(); ?></p>
 			<!-- the meta data that is the price -->
 			<p>Pris: <?php echo $price; ?> kr<p><br>
+			<i class="fa fa-check fa-2x"></i>
 		<!-- The size selection form -->
 		<form id="purchase">
 			<select id="sizelist" form="purchase">
@@ -55,7 +56,6 @@ while (have_posts()) {
 }
  ?>
 </div><!-- Ends sing_post wrapper -->
-
 <script type="text/javascript">
 
 	//declare the sign $ with jQuery
@@ -84,7 +84,7 @@ while (have_posts()) {
 	var myCollection = <?= $_SESSION['shoppingcart']; ?>;
 //The code under will run if the submit button in single.php is clicked
 $("#btn-submit").click(function(){
-
+	$(".fa-check").fadeIn();
 	//puts the value of the selected size from the single.php file in the variabel size.
 	var size = $( '#sizelist :selected' ).text();
 
@@ -98,6 +98,12 @@ $("#btn-submit").click(function(){
 		success:function(data){
 			//On success of the ajax request the function loadItemList will run 
 			loadItemList();
+			/*swal({
+			   title: "Produkt tillagd i varukorgen",
+			   type: "sucess",
+			   timer: 2000,
+			   showConfirmButton: false
+			});*/
 		}
 	});
 });

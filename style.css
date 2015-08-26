@@ -1,185 +1,253 @@
+/* line 1, scss/style.scss */
 body {
   background-image: url("img/OG2.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
-  body #wrapper {
-    width: 80%;
-    height: auto;
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto; }
-    body #wrapper #categories {
-      height: 100px;
-      width: 100%;
-      margin-top: 20px;
-      margin-bottom: 20px; }
-      body #wrapper #categories li {
-        width: 110px;
-        border-radius: 5px;
-        height: 30px;
-        list-style-type: none;
-        float: left;
-        margin-left: 10px;
-        display: inline-block;
-        background-color: #0096db; }
-      body #wrapper #categories a {
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        text-transform: uppercase; }
-    body #wrapper #header {
-      width: 100%;
-      height: 55px;
-      top: 0;
-      background-color: white;
-      position: fixed;
-      left: 0;
-      z-index: 75; }
-      body #wrapper #header #Header-logo {
-        width: 40px;
-        height: 50px;
-        display: block;
-        position: absolute;
-        margin-left: 48.5%; }
-      body #wrapper #header #shoppingcart-img {
-        width: 50px;
-        height: 50px;
-        right: 0;
-        display: inline;
-        position: absolute;
-        margin-top: 2.5px;
-        margin-right: 5px; }
-    body #wrapper #item-holder {
-      background-color: white;
-      width: 300px;
-      height: auto;
-      right: 0;
-      top: 0;
-      margin-top: 55px;
-      position: absolute;
-      z-index: 50;
-      display: none; }
-      body #wrapper #item-holder .added-item {
-        margin: 3px;
-        border: 1px solid #C2C2C2;
-        height: 100px;
-        box-shadow: 3px 3px 3px #C2C2C2; }
-        body #wrapper #item-holder .added-item .item-info {
-          float: left; }
-          body #wrapper #item-holder .added-item .item-info ul li {
-            list-style-type: none;
-            font-family: helvetica; }
-        body #wrapper #item-holder .added-item .remove-button {
-          width: 188px;
-          margin-left: 88px; }
-          body #wrapper #item-holder .added-item .remove-button button {
-            margin-top: 25px;
-            float: right;
-            height: 45px;
-            background-color: #FF0000;
-            color: white;
-            border-radius: 5px;
-            border: none;
-            text-decoration: none;
-            outline: none;
-            border-bottom: 5px solid #D40000; }
-          body #wrapper #item-holder .added-item .remove-button button:active {
-            margin-top: 25px;
-            float: right;
-            height: 45px;
-            background-color: #FF0000;
-            color: white;
-            border-radius: 5px;
-            border: none;
-            text-decoration: none;
-            outline: none;
-            border-top: 5px solid #D40000; }
-    body #wrapper #overlay {
-      display: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      left: 50%;
-      top: 50%;
-      position: fixed;
-      z-index: 25;
-      height: 1400px;
-      margin-top: -700px;
-      width: 2400px;
-      margin-left: -1200px; }
-    body #wrapper #product-wrapper {
-      width: 300px;
-      height: 400px;
-      display: inline-block;
-      margin-left: 100px;
-      margin-bottom: 10px;
-      background-color: white;
-      box-shadow: 3px 3px 3px #C2C2C2;
-      border: 1px solid #C2C2C2; }
-      body #wrapper #product-wrapper #index-title {
-        margin-left: 10px;
-        margin-left: 10px;
-        margin-bottom: 0px;
-        font-family: helvetica;
-        text-decoration: none;
-        color: black; }
-      body #wrapper #product-wrapper #index-price {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 1px;
-        font-family: helvetica;
-        text-decoration: none;
-        color: black;
-        border-bottom: 1px solid black; }
-      body #wrapper #product-wrapper img {
-        margin-top: 72px;
-        height: 255px;
-        width: 218px;
-        margin-left: 38px; }
-    body #wrapper #single-box {
-      border: solid 1px black;
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      background-color: white;
-      z-index: 100;
-      height: 500px;
-      margin-top: -250px;
-      width: 800px;
-      margin-left: -400px; }
-      body #wrapper #single-box .product_image {
-        float: left;
-        position: relative; }
-      body #wrapper #single-box .product_info {
-        float: left;
-        position: relative;
-        width: 300px;
-        margin-left: 100px; }
-    body #wrapper #inner {
-      width: 100%;
-      height: 400px;
-      overflow: hidden;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      margin: -100px 0 0 0; }
-    body #wrapper #carousel img {
-      height: auto;
-      border: none;
-      display: block;
-      float: left;
-      padding: 0 10px; }
-    body #wrapper .loading {
-      height: 200px;
-      width: 200px;
-      background-image: url("img/loading1.gif");
-      background-repeat: none;
-      margin: 0 auto; }
-    body #wrapper .loading_text {
-      width: 200px;
-      height: 40px;
-      margin: 0 auto;
-      text-align: center; }
-  body #page-not-found img {
-    width: 100px;
-    height: auto;
-    width: 100%; }
+  background-attachment: fixed;
+}
+/* line 8, scss/style.scss */
+body #wrapper {
+  width: 80%;
+  height: auto;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, scss/style.scss */
+body #wrapper #categories {
+  height: 100px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 21, scss/style.scss */
+body #wrapper #categories li {
+  width: 112px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 2px #333333;
+  height: 30px;
+  list-style-type: none;
+  float: left;
+  margin-left: 10px;
+  display: inline-block;
+  background-color: #0096db;
+}
+/* line 33, scss/style.scss */
+body #wrapper #categories a {
+  width: 110px;
+  text-align: center;
+  margin-top: 5px;
+  text-shadow: 2px 2px #000000;
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 46, scss/style.scss */
+body #wrapper #header {
+  width: 100%;
+  height: 55px;
+  top: 0;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  z-index: 75;
+}
+/* line 55, scss/style.scss */
+body #wrapper #header #Header-logo {
+  width: 40px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  margin-left: 48.5%;
+}
+/* line 62, scss/style.scss */
+body #wrapper #header #shoppingcart-img {
+  width: 50px;
+  height: 50px;
+  right: 0;
+  display: inline;
+  position: absolute;
+  margin-top: 2.5px;
+  margin-right: 5px;
+}
+/* line 72, scss/style.scss */
+body #wrapper #item-holder {
+  background-color: white;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: scroll;
+  right: 0;
+  top: 0;
+  margin-top: 55px;
+  position: absolute;
+  z-index: 50;
+  display: none;
+}
+/* line 83, scss/style.scss */
+body #wrapper #item-holder .added-item {
+  margin: 3px;
+  border: 1px solid #C2C2C2;
+  height: 100px;
+  box-shadow: 3px 3px 3px #C2C2C2;
+}
+/* line 88, scss/style.scss */
+body #wrapper #item-holder .added-item .item-info {
+  float: left;
+}
+/* line 92, scss/style.scss */
+body #wrapper #item-holder .added-item .item-info ul li {
+  list-style-type: none;
+  font-family: helvetica;
+}
+/* line 98, scss/style.scss */
+body #wrapper #item-holder .added-item .remove-button {
+  width: 188px;
+  margin-left: 88px;
+}
+/* line 101, scss/style.scss */
+body #wrapper #item-holder .added-item .remove-button button {
+  margin-top: 25px;
+  float: right;
+  height: 45px;
+  background-color: #FF0000;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  border-bottom: 5px solid #D40000;
+}
+/* line 113, scss/style.scss */
+body #wrapper #item-holder .added-item .remove-button button:active {
+  margin-top: 25px;
+  float: right;
+  height: 45px;
+  background-color: #FF0000;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  border-top: 5px solid #D40000;
+}
+/* line 129, scss/style.scss */
+body #wrapper #overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  z-index: 25;
+  height: 1400px;
+  margin-top: -700px;
+  width: 2400px;
+  margin-left: -1200px;
+}
+/* line 143, scss/style.scss */
+body #wrapper #product-wrapper {
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 3px 3px 3px #C2C2C2;
+  border: 1px solid #C2C2C2;
+}
+/* line 152, scss/style.scss */
+body #wrapper #product-wrapper #index-title {
+  margin-left: 10px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-family: helvetica;
+  text-decoration: none;
+  color: black;
+}
+/* line 160, scss/style.scss */
+body #wrapper #product-wrapper #index-price {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1px;
+  font-family: helvetica;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+/* line 169, scss/style.scss */
+body #wrapper #product-wrapper img {
+  margin-top: 72px;
+  height: 255px;
+  width: 218px;
+  margin-left: 38px;
+}
+/* line 177, scss/style.scss */
+body #wrapper #single-box {
+  border: solid 1px black;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  background-color: white;
+  z-index: 100;
+  height: 500px;
+  margin-top: -250px;
+  width: 800px;
+  margin-left: -400px;
+}
+/* line 190, scss/style.scss */
+body #wrapper #single-box .product_image {
+  float: left;
+  position: relative;
+}
+/* line 194, scss/style.scss */
+body #wrapper #single-box .product_info {
+  float: left;
+  position: relative;
+  width: 300px;
+  margin-left: 100px;
+}
+/* line 200, scss/style.scss */
+body #wrapper #single-box .product_info .fa-check {
+  display: none;
+  color: green;
+}
+/* line 206, scss/style.scss */
+body #wrapper #inner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: -100px 0 0 0;
+}
+/* line 215, scss/style.scss */
+body #wrapper #carousel img {
+  height: auto;
+  border: none;
+  display: block;
+  float: left;
+  padding: 0 10px;
+}
+/* line 223, scss/style.scss */
+body #wrapper .loading {
+  height: 200px;
+  width: 200px;
+  background-image: url("img/loading1.gif");
+  background-repeat: none;
+  margin: 0 auto;
+}
+/* line 230, scss/style.scss */
+body #wrapper .loading_text {
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 238, scss/style.scss */
+body #page-not-found img {
+  width: 100px;
+  height: auto;
+  width: 100%;
+}
