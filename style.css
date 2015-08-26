@@ -1,5 +1,5 @@
 body {
-  background-image: url("img/OG2.jpg");
+  background-image: url("img/OG4.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -59,7 +59,8 @@ body {
       margin-top: 55px;
       position: absolute;
       z-index: 50;
-      display: none; }
+      display: none;
+      position: fixed; }
       body #wrapper #item-holder .added-item {
         margin: 3px;
         border: 1px solid #C2C2C2;
@@ -107,10 +108,10 @@ body {
       width: 2400px;
       margin-left: -1200px; }
     body #wrapper #product-wrapper {
-      width: 300px;
-      height: 400px;
+      width: 550px;
+      height: 650px;
       display: inline-block;
-      margin-left: 100px;
+      margin-left: 80px;
       margin-bottom: 10px;
       background-color: white;
       box-shadow: 3px 3px 3px #C2C2C2;
@@ -121,7 +122,8 @@ body {
         margin-bottom: 0px;
         font-family: helvetica;
         text-decoration: none;
-        color: black; }
+        color: black;
+        font-size: 25px; }
       body #wrapper #product-wrapper #index-price {
         margin-left: 10px;
         margin-right: 10px;
@@ -131,9 +133,9 @@ body {
         color: black;
         border-bottom: 1px solid black; }
       body #wrapper #product-wrapper img {
-        margin-top: 72px;
-        height: 255px;
-        width: 218px;
+        margin-top: 32px;
+        height: 510px;
+        width: 436px;
         margin-left: 38px; }
     body #wrapper #single-box {
       border: solid 1px black;
@@ -179,6 +181,37 @@ body {
       height: 40px;
       margin: 0 auto;
       text-align: center; }
+    body #wrapper #checkout-list {
+      background-color: rgba(255, 255, 255, 0.7); }
+      body #wrapper #checkout-list #checkout-cat {
+        margin: 15px;
+        font-family: helvetica;
+        text-align: left;
+        display: inline-block;
+        width: 100%; }
+        body #wrapper #checkout-list #checkout-cat #cat-1 {
+          font-family: helvetica;
+          text-align: left;
+          display: inline-block;
+          width: 30%; }
+        body #wrapper #checkout-list #checkout-cat #cat-2 {
+          text-align: center;
+          top: 0;
+          width: 30%; }
+        body #wrapper #checkout-list #checkout-cat #cat-3 {
+          float: right;
+          top: 0;
+          width: 30%; }
+      body #wrapper #checkout-list #item-list #checkout-product-info {
+        border-bottom: 1px solid black;
+        font-family: helvetica;
+        font-size: 25px; }
+        body #wrapper #checkout-list #item-list #checkout-product-info #span1 {
+          margin-left: auto;
+          margin-right: auto;
+          width: 90%; }
+        body #wrapper #checkout-list #item-list #checkout-product-info #span2 {
+          float: right; }
   body #page-not-found img {
     width: 100px;
     height: auto;
