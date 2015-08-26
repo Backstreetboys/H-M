@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!-- Hiho -->
 		<!--Checks if the user is on the home page. If the user is on the home page the Isitope buttons will be looped outs.
 			And if the user is not on the hopme page it will not apper.-->
 		<?php if(is_home()){ ?>
