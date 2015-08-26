@@ -11,8 +11,9 @@ get_header(); ?>
 <div id="receipt_option">
 
 	<h1>Thanks for the purchase</h1>
+	<p>Please choose whether you want the receipt printed or on your email.</p>
 
-	<button>papper</button>	<button>Email</button>
+	<button id="btn-paper">Paper</button><button id="btn-email">Email</button>
 
 
 

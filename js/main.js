@@ -75,6 +75,46 @@ $("#isotope").isotope({
 			$("#isotope").isotope({ filter: '.category-'+itemId });
 		});
 	}
-	
-});
+	/*
+	* Receipt (used on page-template_receipt_option.php
+	*/
+	$("#btn-email").click(function(){
+		swal({
+		   title: "Receipt to email",
+		   text: "Please write your email:",
+		   type: "input",   
+		   showCancelButton: true,
+		   closeOnConfirm: false,
+		   animation: "slide-from-top",
+		   inputPlaceholder: "Your email here.." },
+				function(inputValue){   
+					if (inputValue === false) 
+						return false;      
+					if (inputValue === ""){
+					     swal.showInputError("Please enter your email");
+					     return false
+					}
+						swal({
+							title:"Perfect!",
+							text: "Your receipt will be sent to: " + inputValue, 
+							type: "success",
+							showConfirmButton: false,
+							timer: 8000
+						});
 
+				window.setTimeout(function(){
+		        	window.location.href = "http://localhost/terminsprojekt";
+		    	}, 8000);
+		    	
+			});
+	});
+	$("#btn-paper").click(function(){
+		swal({
+			title: "",
+			type: "success",
+			text: "Your receipt is being printed.",
+			showConfirmButton: false,
+			timer: 2000
+		});
+	});
+});

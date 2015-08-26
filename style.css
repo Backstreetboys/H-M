@@ -3,7 +3,6 @@ body {
   background-image: url("img/OG4.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   background-attachment: fixed;
 }
 /* line 8, scss/style.scss */
@@ -85,29 +84,30 @@ body #wrapper #item-holder {
   position: absolute;
   z-index: 50;
   display: none;
+  position: fixed;
 }
-/* line 83, scss/style.scss */
+/* line 84, scss/style.scss */
 body #wrapper #item-holder .added-item {
   margin: 3px;
   border: 1px solid #C2C2C2;
   height: 100px;
   box-shadow: 3px 3px 3px #C2C2C2;
 }
-/* line 88, scss/style.scss */
+/* line 89, scss/style.scss */
 body #wrapper #item-holder .added-item .item-info {
   float: left;
 }
-/* line 92, scss/style.scss */
+/* line 93, scss/style.scss */
 body #wrapper #item-holder .added-item .item-info ul li {
   list-style-type: none;
   font-family: helvetica;
 }
-/* line 98, scss/style.scss */
+/* line 99, scss/style.scss */
 body #wrapper #item-holder .added-item .remove-button {
   width: 188px;
   margin-left: 88px;
 }
-/* line 101, scss/style.scss */
+/* line 102, scss/style.scss */
 body #wrapper #item-holder .added-item .remove-button button {
   margin-top: 25px;
   float: right;
@@ -120,7 +120,7 @@ body #wrapper #item-holder .added-item .remove-button button {
   outline: none;
   border-bottom: 5px solid #D40000;
 }
-/* line 113, scss/style.scss */
+/* line 114, scss/style.scss */
 body #wrapper #item-holder .added-item .remove-button button:active {
   margin-top: 25px;
   float: right;
@@ -133,7 +133,7 @@ body #wrapper #item-holder .added-item .remove-button button:active {
   outline: none;
   border-top: 5px solid #D40000;
 }
-/* line 129, scss/style.scss */
+/* line 130, scss/style.scss */
 body #wrapper #overlay {
   display: none;
   background-color: rgba(0, 0, 0, 0.8);
@@ -146,18 +146,18 @@ body #wrapper #overlay {
   width: 2400px;
   margin-left: -1200px;
 }
-/* line 143, scss/style.scss */
+/* line 144, scss/style.scss */
 body #wrapper #product-wrapper {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   display: inline-block;
-  margin-left: 100px;
+  margin-left: 80px;
   margin-bottom: 10px;
   background-color: white;
   box-shadow: 3px 3px 3px #C2C2C2;
   border: 1px solid #C2C2C2;
 }
-/* line 152, scss/style.scss */
+/* line 153, scss/style.scss */
 body #wrapper #product-wrapper #index-title {
   margin-left: 10px;
   margin-left: 10px;
@@ -165,8 +165,9 @@ body #wrapper #product-wrapper #index-title {
   font-family: helvetica;
   text-decoration: none;
   color: black;
+  font-size: 25px;
 }
-/* line 160, scss/style.scss */
+/* line 162, scss/style.scss */
 body #wrapper #product-wrapper #index-price {
   margin-left: 10px;
   margin-right: 10px;
@@ -176,14 +177,14 @@ body #wrapper #product-wrapper #index-price {
   color: black;
   border-bottom: 1px solid black;
 }
-/* line 169, scss/style.scss */
+/* line 171, scss/style.scss */
 body #wrapper #product-wrapper img {
-  margin-top: 72px;
-  height: 255px;
-  width: 218px;
+  margin-top: 32px;
+  height: 360px;
+  width: 286px;
   margin-left: 38px;
 }
-/* line 177, scss/style.scss */
+/* line 179, scss/style.scss */
 body #wrapper #single-box {
   border: solid 1px black;
   position: fixed;
@@ -196,24 +197,24 @@ body #wrapper #single-box {
   width: 800px;
   margin-left: -400px;
 }
-/* line 190, scss/style.scss */
+/* line 192, scss/style.scss */
 body #wrapper #single-box .product_image {
   float: left;
   position: relative;
 }
-/* line 194, scss/style.scss */
+/* line 196, scss/style.scss */
 body #wrapper #single-box .product_info {
   float: left;
   position: relative;
   width: 300px;
   margin-left: 100px;
 }
-/* line 200, scss/style.scss */
+/* line 202, scss/style.scss */
 body #wrapper #single-box .product_info .fa-check {
   display: none;
   color: green;
 }
-/* line 206, scss/style.scss */
+/* line 208, scss/style.scss */
 body #wrapper #inner {
   width: 100%;
   height: 400px;
@@ -223,7 +224,7 @@ body #wrapper #inner {
   left: 0;
   margin: -100px 0 0 0;
 }
-/* line 215, scss/style.scss */
+/* line 217, scss/style.scss */
 body #wrapper #carousel img {
   height: auto;
   border: none;
@@ -231,7 +232,7 @@ body #wrapper #carousel img {
   float: left;
   padding: 0 10px;
 }
-/* line 223, scss/style.scss */
+/* line 225, scss/style.scss */
 body #wrapper .loading {
   height: 200px;
   width: 200px;
@@ -239,7 +240,7 @@ body #wrapper .loading {
   background-repeat: none;
   margin: 0 auto;
 }
-/* line 230, scss/style.scss */
+/* line 232, scss/style.scss */
 body #wrapper .loading_text {
   width: 200px;
   height: 40px;
@@ -247,224 +248,55 @@ body #wrapper .loading_text {
   text-align: center;
 }
 /* line 238, scss/style.scss */
+body #wrapper #checkout-list {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* line 240, scss/style.scss */
+body #wrapper #checkout-list #checkout-cat {
+  margin: 15px;
+  font-family: helvetica;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+/* line 247, scss/style.scss */
+body #wrapper #checkout-list #checkout-cat #cat-1 {
+  font-family: helvetica;
+  text-align: left;
+  display: inline-block;
+  width: 30%;
+}
+/* line 253, scss/style.scss */
+body #wrapper #checkout-list #checkout-cat #cat-2 {
+  text-align: center;
+  top: 0;
+  width: 30%;
+}
+/* line 259, scss/style.scss */
+body #wrapper #checkout-list #checkout-cat #cat-3 {
+  float: right;
+  top: 0;
+  width: 30%;
+}
+/* line 267, scss/style.scss */
+body #wrapper #checkout-list #item-list #checkout-product-info {
+  border-bottom: 1px solid black;
+  font-family: helvetica;
+  font-size: 25px;
+}
+/* line 271, scss/style.scss */
+body #wrapper #checkout-list #item-list #checkout-product-info #span1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+/* line 276, scss/style.scss */
+body #wrapper #checkout-list #item-list #checkout-product-info #span2 {
+  float: right;
+}
+/* line 288, scss/style.scss */
 body #page-not-found img {
   width: 100px;
   height: auto;
   width: 100%;
 }
-=======
-  background-attachment: fixed; }
-  body #wrapper {
-    width: 80%;
-    height: auto;
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto; }
-    body #wrapper #categories {
-      height: 100px;
-      width: 100%;
-      margin-top: 20px;
-      margin-bottom: 20px; }
-      body #wrapper #categories li {
-        width: 110px;
-        border-radius: 5px;
-        height: 30px;
-        list-style-type: none;
-        float: left;
-        margin-left: 10px;
-        display: inline-block;
-        background-color: #0096db; }
-      body #wrapper #categories a {
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        text-transform: uppercase; }
-    body #wrapper #header {
-      width: 100%;
-      height: 55px;
-      top: 0;
-      background-color: white;
-      position: fixed;
-      left: 0;
-      z-index: 75; }
-      body #wrapper #header #Header-logo {
-        width: 40px;
-        height: 50px;
-        display: block;
-        position: absolute;
-        margin-left: 48.5%; }
-      body #wrapper #header #shoppingcart-img {
-        width: 50px;
-        height: 50px;
-        right: 0;
-        display: inline;
-        position: absolute;
-        margin-top: 2.5px;
-        margin-right: 5px; }
-    body #wrapper #item-holder {
-      background-color: white;
-      width: 300px;
-      height: auto;
-      right: 0;
-      top: 0;
-      margin-top: 55px;
-      position: absolute;
-      z-index: 50;
-      display: none;
-      position: fixed; }
-      body #wrapper #item-holder .added-item {
-        margin: 3px;
-        border: 1px solid #C2C2C2;
-        height: 100px;
-        box-shadow: 3px 3px 3px #C2C2C2; }
-        body #wrapper #item-holder .added-item .item-info {
-          float: left; }
-          body #wrapper #item-holder .added-item .item-info ul li {
-            list-style-type: none;
-            font-family: helvetica; }
-        body #wrapper #item-holder .added-item .remove-button {
-          width: 188px;
-          margin-left: 88px; }
-          body #wrapper #item-holder .added-item .remove-button button {
-            margin-top: 25px;
-            float: right;
-            height: 45px;
-            background-color: #FF0000;
-            color: white;
-            border-radius: 5px;
-            border: none;
-            text-decoration: none;
-            outline: none;
-            border-bottom: 5px solid #D40000; }
-          body #wrapper #item-holder .added-item .remove-button button:active {
-            margin-top: 25px;
-            float: right;
-            height: 45px;
-            background-color: #FF0000;
-            color: white;
-            border-radius: 5px;
-            border: none;
-            text-decoration: none;
-            outline: none;
-            border-top: 5px solid #D40000; }
-    body #wrapper #overlay {
-      display: none;
-      background-color: rgba(0, 0, 0, 0.8);
-      left: 50%;
-      top: 50%;
-      position: fixed;
-      z-index: 25;
-      height: 1400px;
-      margin-top: -700px;
-      width: 2400px;
-      margin-left: -1200px; }
-    body #wrapper #product-wrapper {
-      width: 550px;
-      height: 650px;
-      display: inline-block;
-      margin-left: 80px;
-      margin-bottom: 10px;
-      background-color: white;
-      box-shadow: 3px 3px 3px #C2C2C2;
-      border: 1px solid #C2C2C2; }
-      body #wrapper #product-wrapper #index-title {
-        margin-left: 10px;
-        margin-left: 10px;
-        margin-bottom: 0px;
-        font-family: helvetica;
-        text-decoration: none;
-        color: black;
-        font-size: 25px; }
-      body #wrapper #product-wrapper #index-price {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 1px;
-        font-family: helvetica;
-        text-decoration: none;
-        color: black;
-        border-bottom: 1px solid black; }
-      body #wrapper #product-wrapper img {
-        margin-top: 32px;
-        height: 510px;
-        width: 436px;
-        margin-left: 38px; }
-    body #wrapper #single-box {
-      border: solid 1px black;
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      background-color: white;
-      z-index: 100;
-      height: 500px;
-      margin-top: -250px;
-      width: 800px;
-      margin-left: -400px; }
-      body #wrapper #single-box .product_image {
-        float: left;
-        position: relative; }
-      body #wrapper #single-box .product_info {
-        float: left;
-        position: relative;
-        width: 300px;
-        margin-left: 100px; }
-    body #wrapper #inner {
-      width: 100%;
-      height: 400px;
-      overflow: hidden;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      margin: -100px 0 0 0; }
-    body #wrapper #carousel img {
-      height: auto;
-      border: none;
-      display: block;
-      float: left;
-      padding: 0 10px; }
-    body #wrapper .loading {
-      height: 200px;
-      width: 200px;
-      background-image: url("img/loading1.gif");
-      background-repeat: none;
-      margin: 0 auto; }
-    body #wrapper .loading_text {
-      width: 200px;
-      height: 40px;
-      margin: 0 auto;
-      text-align: center; }
-    body #wrapper #checkout-list {
-      background-color: rgba(255, 255, 255, 0.7); }
-      body #wrapper #checkout-list #checkout-cat {
-        margin: 15px;
-        font-family: helvetica;
-        text-align: left;
-        display: inline-block;
-        width: 100%; }
-        body #wrapper #checkout-list #checkout-cat #cat-1 {
-          font-family: helvetica;
-          text-align: left;
-          display: inline-block;
-          width: 30%; }
-        body #wrapper #checkout-list #checkout-cat #cat-2 {
-          text-align: center;
-          top: 0;
-          width: 30%; }
-        body #wrapper #checkout-list #checkout-cat #cat-3 {
-          float: right;
-          top: 0;
-          width: 30%; }
-      body #wrapper #checkout-list #item-list #checkout-product-info {
-        border-bottom: 1px solid black;
-        font-family: helvetica;
-        font-size: 25px; }
-        body #wrapper #checkout-list #item-list #checkout-product-info #span1 {
-          margin-left: auto;
-          margin-right: auto;
-          width: 90%; }
-        body #wrapper #checkout-list #item-list #checkout-product-info #span2 {
-          float: right; }
-  body #page-not-found img {
-    width: 100px;
-    height: auto;
-    width: 100%; }
->>>>>>> origin/master

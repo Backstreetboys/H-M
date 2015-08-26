@@ -8,7 +8,6 @@
  */
 get_header(); 
 ?>
-
 <div class="loading">
 </div>
 <p class="loading_text">Din betalning behandlas.</p>
