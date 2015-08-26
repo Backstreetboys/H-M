@@ -50,7 +50,7 @@ $('button').click(function(){
 		var item = $(this).attr('itemid');
 		myCollection['data'].splice(item, 1);
 	$.ajax({
-		url: "wp-content/themes/H-M/basket.php",
+		url: <?php get_template_directory_uri(); ?>"/basket.php",
 		type: "POST",
 		data: "update=" + JSON.stringify(myCollection),
 		success:function(data){
