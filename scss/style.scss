@@ -1,5 +1,5 @@
 body {
-	background-image: url("img/bajsBild.jpg");
+	background-image: url("img/OG2.jpg");
 	background-size: 100vw 100vh;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -73,7 +73,51 @@ body {
 			position: absolute;
 			z-index: 50;
 			display: none;
+			.added-item{
+				margin: 3px;
+				border: 1px solid #C2C2C2;
+				height: 100px;
+				box-shadow: 3px 3px 3px #C2C2C2;
+				.item-info{
+					float: left;
+					
+					ul{
+						li{
+							list-style-type: none;
+					font-family: helvetica;
+						}
+					}
+				}
+				.remove-button{
+					width: 188px;
+					margin-left: 88px;
+					button{
+						margin-top: 25px;
+						float: right;
+						height: 45px;
+						background-color: #FF0000;
+						color: white;
+						border-radius: 5px;
+						border: none;
+						text-decoration: none;
+						outline: none;
+						border-bottom: 5px solid #D40000;
+					}
+					button:active{
+						margin-top: 25px;
+						float: right;
+						height: 45px;
+						background-color: #FF0000;
+						color: white;
+						border-radius: 5px;
+						border: none;
+						text-decoration: none;
+						outline: none;
+						border-top: 5px solid #D40000;
+					}
+				}
 			}
+		}
 		
 		#overlay {
 			display: none;
@@ -90,13 +134,37 @@ body {
 			margin-left: -1200px;
 		}
 		#product-wrapper {
-			width: 400px;
-			height: auto;
+			width: 300px;
+			height: 400px;
 			display: inline-block;
 			margin-left: 100px;
 			margin-bottom: 10px;
 			background-color: white;
-			box-shadow: 10px 10px 5px #888888;
+			box-shadow: 3px 3px 3px #C2C2C2;
+			border: 1px solid #C2C2C2;
+				#index-title{
+					margin-left: 10px;
+					margin-left: 10px;
+					margin-bottom: 0px;
+					font-family: helvetica;
+					text-decoration: none;
+					color: black;
+				}
+				#index-price{
+					margin-left: 10px;
+					margin-right: 10px;
+					margin-top: 1px;
+					font-family: helvetica;
+					text-decoration: none;
+					color: black;
+					border-bottom: 1px solid black;
+				}
+				img{
+					margin-top: 72px;
+					height: 255px;
+					width: 218px;
+					margin-left: 38px;
+				}
 		}
 
 		#single-box{

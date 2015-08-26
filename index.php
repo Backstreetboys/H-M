@@ -24,15 +24,16 @@
 <div id="isotope">
 	<?php
 	if(have_posts()){
-		while(have_posts()){ ?>
-			
+		while(have_posts()){
+			$price = get_post_meta( get_the_ID(), 'product_price', true ); ?>
 			
 				<?php
 				the_post(); ?>
 				 <a class="post-link" rel="<?php the_ID(); ?>" href="<?php the_permalink(); ?>">
 				 	
 				 		<div id="product-wrapper" <?php post_class();?>>
-							<p><?= the_title(); ?></p>
+							<p id="index-title"><?= the_title(); ?></p>
+							<p id="index-price"><?php echo $price ?> kr</p>
 							<?php the_post_thumbnail(); ?>
 						</div>				
 				</a>
