@@ -42,5 +42,26 @@ get_header(); ?>
 		<a href="<?= get_template_directory_uri() ?>/loading">Betala</a>
 
 </div>
+<script type="text/javascript">
+
+var $ = jQuery;
+$('button').click(function(){
+	var myCollection = <?= $_SESSION['shoppingcart']; ?>;
+		var item = $(this).attr('itemid');
+		myCollection['data'].splice(item, 1);
+	$.ajax({
+		url: "wp-content/themes/H-M/basket.php",
+		type: "POST",
+		data: "update=" + JSON.stringify(myCollection),
+		success:function(data){
+			loadItemList();
+		}
+
+	}).done(function(){
+		console.log('success');
+	});
+});
+
+</script>
 
 <?php get_footer(); ?>
