@@ -79,11 +79,12 @@ while (have_posts()) {
 	
 	//Gives the variabel title the values of the products title
 	var title = $('#item_name').text();
+	
 	//variabel myCollection is equal to the $_SESSION['shoppingcart'] array.
 	var myCollection = <?= $_SESSION['shoppingcart']; ?>;
-
 //The code under will run if the submit button in single.php is clicked
 $("#btn-submit").click(function(){
+
 	//puts the value of the selected size from the single.php file in the variabel size.
 	var size = $( '#sizelist :selected' ).text();
 

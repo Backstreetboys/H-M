@@ -121,6 +121,10 @@ function myplugin_save_meta_box_data( $post_id ) {
 }
 add_action( 'save_post', 'myplugin_save_meta_box_data' );
 
+if(!session_id()){
+	session_start();
+}
+
 /*
 * Changes the wp_list_categories to add another class used in index.php with isotope filtering
 */

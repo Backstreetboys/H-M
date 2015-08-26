@@ -55,8 +55,9 @@ session_start();
 			
 			
 		</div><!-- Wrapper div ends -->
-		<div id="item-holder"><!-- This div contains all the addes products that will be shown when you push the shopping bag icon -->
-			<!-- links to the checkout.php when you whant to check out -->
+		<!-- This div contains all the addes products that will be shown when you push the shopping bag icon -->
+		<!-- links to the checkout.php when you whant to check out -->
+		<div id="item-holder">
 			<h1><a href="<?= get_template_directory_uri(); ?>/checkout">checkout</a></h1>
 		</div><!-- Ends the item holder div -->
 		
