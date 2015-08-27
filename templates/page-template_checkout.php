@@ -20,6 +20,7 @@ get_header(); ?>
 		
 		<?php
 		$sum = 0;
+		$i = 0;
 		$item = json_decode($_SESSION['shoppingcart'], true);
 			foreach ($item['data'] as $result) { ?>
 				
@@ -27,15 +28,16 @@ get_header(); ?>
 						<td><?php echo $result['name']; ?></td>
 						<td><?php echo $result['size']; ?></td>
 						<td><?php echo $result['price']; ?>kr</td>
-						<td id="table-button"><button>remove X</button></td>
+						<td id="table-button" itemid="<?= $i ?>"><button>remove X</button></td>
 					</tr>
 				
 				
 			<?php
-			$val + $result['price'];
+			$i = 0;
+			$sum+= $result['price'];
 			} ?>
 	</table>
-<!-- 	<?php echo $sum; ?> -->	
+	<h1>Summa: <?php echo $sum ?></h1>
 
 </div>
 <div id="pay">
@@ -50,7 +52,7 @@ $('button').click(function(){
 		var item = $(this).attr('itemid');
 		myCollection['data'].splice(item, 1);
 	$.ajax({
-		url: <?php get_template_directory_uri(); ?>"/basket.php",
+		url: "<?= get_template_directory_uri(); ?>/basket.php",
 		type: "POST",
 		data: "update=" + JSON.stringify(myCollection),
 		success:function(data){
@@ -58,7 +60,7 @@ $('button').click(function(){
 		}
 
 	}).done(function(){
-		console.log('success');
+		window.location.reload();
 	});
 });
 

@@ -10,12 +10,12 @@ get_header(); ?>
 
 <div id="receipt_option">
 
-	<h1>Thanks for the purchase</h1>
-	<p>Please choose whether you want the receipt printed or on your email.</p>
-
-	<button id="btn-paper">Paper</button><button id="btn-email">Email</button>
-
-
+	<h1 id="receipt-header">Thanks for the purchase</h1>
+	<p id="receipt-text">Please choose whether you want the receipt printed or on your email.</p>
+	<div id="btn-option">
+		<button id="btn-paper">Paper</button><button id="btn-email">Email</button>
+	</div>
+	
 
 </div>
 

@@ -294,6 +294,58 @@ body {
 
 			}
 		}
+		#receipt_option{
+			#receipt-header{
+				text-align: center;
+				font-family: helvetica;
+				font-size: 50px;
+			}
+			#receipt-text{
+				text-align: center;
+				font-family: helvetica;
+				font-size: 30px;
+
+			}
+			#btn-option{
+				margin-right: auto;
+				margin-left: auto;
+				height: 110px;
+				width: 45%;
+				button{
+					margin-top: 25px;
+					margin-left: 20px;
+					//float: right;
+					height: 100px;
+					width: 200px;
+					background-color: #FF0000;
+					color: white;
+					font-size: 25px;
+					font-family: helvetica;
+					border-radius: 5px;
+					border: none;
+					text-decoration: none;
+					outline: none;
+					border-bottom: 5px solid #D40000;
+					border-left: 3px solid #D40000;
+				}
+				button:active{
+					margin-top: 25px;
+					//float: right;
+					height: 100px;
+					width: 200px;
+					background-color: #FF0000;
+					color: white;
+					font-size: 25px;
+					font-family: helvetica;
+					border-radius: 5px;
+					border: none;
+					text-decoration: none;
+					outline: none;
+					border-top: 5px solid #D40000;
+					border-right: 3px solid #D40000;
+				}
+			}
+		}
 	}
 	#page-not-found{
 			img{

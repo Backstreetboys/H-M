@@ -19,7 +19,8 @@ $(window).load(function() {
     window.setTimeout(function(){
 
         // Move to a new location or you can do something else
-        window.location.href = "http://localhost/terminsprojekt/receipt/";
+     	/*För Martin*/window.location.href = "<?= get_template_directory_uri(); ?>/receipt";
+       /*För Erik*/ //window.location.href = "http://localhost/terminsprojekt/receipt/";
 
     }, 5000);
 
