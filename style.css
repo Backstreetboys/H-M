@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed; }
   body #wrapper {
-    width: 80%;
+    width: 90%;
     height: auto;
     margin-top: 70px;
     margin-left: auto;
@@ -36,15 +36,15 @@ body {
         font-weight: bold; }
     body #wrapper #header {
       width: 100%;
-      height: 55px;
+      height: 65px;
       top: 0;
       background-color: white;
       position: fixed;
       left: 0;
       z-index: 75; }
       body #wrapper #header #Header-logo {
-        width: 40px;
-        height: 50px;
+        width: 55px;
+        height: 65px;
         display: block;
         position: absolute;
         margin-left: 48.5%; }
@@ -54,8 +54,8 @@ body {
         right: 0;
         display: inline;
         position: absolute;
-        margin-top: 2.5px;
-        margin-right: 5px; }
+        margin-top: 7px;
+        margin-right: 7px; }
     body #wrapper #item-holder {
       background-color: white;
       width: 300px;
@@ -63,7 +63,7 @@ body {
       overflow-y: scroll;
       right: 0;
       top: 0;
-      margin-top: 55px;
+      margin-top: 65px;
       position: absolute;
       z-index: 50;
       display: none;
@@ -115,10 +115,10 @@ body {
       width: 2400px;
       margin-left: -1200px; }
     body #wrapper #product-wrapper {
-      width: 400px;
-      height: 500px;
+      width: 450px;
+      height: 550px;
       display: inline-block;
-      margin-left: 80px;
+      margin-left: 40px;
       margin-bottom: 10px;
       background-color: white;
       box-shadow: 3px 3px 3px #C2C2C2;
@@ -234,48 +234,62 @@ body {
             outline: none;
             border-top: 4px solid #D40000;
             border-right: 2px solid #D40000; }
-    body #wrapper #receipt_option #receipt-header {
-      text-align: center;
-      font-family: helvetica;
-      font-size: 50px; }
-    body #wrapper #receipt_option #receipt-text {
-      text-align: center;
-      font-family: helvetica;
-      font-size: 30px; }
-    body #wrapper #receipt_option #btn-option {
-      margin-right: auto;
-      margin-left: auto;
-      height: 110px;
-      width: 45%; }
-      body #wrapper #receipt_option #btn-option button {
-        margin-top: 25px;
-        margin-left: 20px;
-        height: 100px;
-        width: 200px;
-        background-color: #FF0000;
-        color: white;
-        font-size: 25px;
-        font-family: helvetica;
-        border-radius: 5px;
-        border: none;
-        text-decoration: none;
-        outline: none;
-        border-bottom: 5px solid #D40000;
-        border-left: 3px solid #D40000; }
-      body #wrapper #receipt_option #btn-option button:active {
-        margin-top: 25px;
-        height: 100px;
-        width: 200px;
-        background-color: #FF0000;
-        color: white;
-        font-size: 25px;
-        font-family: helvetica;
-        border-radius: 5px;
-        border: none;
-        text-decoration: none;
-        outline: none;
-        border-top: 5px solid #D40000;
-        border-right: 3px solid #D40000; }
+    body #wrapper #receipt-option-outer {
+      display: table;
+      position: absolute;
+      height: 90%;
+      width: 90%; }
+      body #wrapper #receipt-option-outer #receipt-option-middle {
+        display: table-cell;
+        vertical-align: middle; }
+        body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner {
+          background-color: rgba(255, 255, 255, 0.7);
+          min-height: 350px;
+          margin-left: auto;
+          margin-right: auto; }
+          body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #receipt-header {
+            text-align: center;
+            font-family: helvetica;
+            font-size: 50px;
+            margin-top: 5px; }
+          body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #receipt-text {
+            text-align: center;
+            font-family: helvetica;
+            font-size: 30px; }
+          body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #btn-option {
+            margin-right: auto;
+            margin-left: auto;
+            height: 110px;
+            width: 45%; }
+            body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #btn-option button {
+              margin-top: 25px;
+              margin-left: 20px;
+              height: 100px;
+              width: 200px;
+              background-color: #FF0000;
+              color: white;
+              font-size: 25px;
+              font-family: helvetica;
+              border-radius: 5px;
+              border: none;
+              text-decoration: none;
+              outline: none;
+              border-bottom: 5px solid #D40000;
+              border-left: 3px solid #D40000; }
+            body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #btn-option button:active {
+              margin-top: 25px;
+              height: 100px;
+              width: 200px;
+              background-color: #FF0000;
+              color: white;
+              font-size: 25px;
+              font-family: helvetica;
+              border-radius: 5px;
+              border: none;
+              text-decoration: none;
+              outline: none;
+              border-top: 5px solid #D40000;
+              border-right: 3px solid #D40000; }
   body #page-not-found img {
     width: 100px;
     height: auto;

@@ -48,7 +48,7 @@ session_start();
 			//If the user is not on the home page the icon will not apper.
 			if(is_home()) { ?>
 				<!-- Image link for the shopping bag icon -->
-				<img id="shoppingcart-img" src="<?= get_template_directory_uri(); ?>/img/shoppingbag.png">
+				<img id="shoppingcart-img" src="<?= get_template_directory_uri(); ?>/img/shoppingbag2.jpg">
 
 			<?php }else{
 
