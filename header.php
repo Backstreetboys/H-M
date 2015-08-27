@@ -59,8 +59,7 @@ session_start();
 		<!-- This div contains all the addes products that will be shown when you push the shopping bag icon -->
 		<!-- links to the checkout.php when you whant to check out -->
 		<div id="item-holder">
-			<i class="fa fa-arrow-right"></i>
-			<a href="<?= get_template_directory_uri(); ?>/checkout">Checkout<i class="fa fa-arrow-right"></i></a>
+			<a href="<?= get_template_directory_uri(); ?>/checkout">Checkout</a>
 		</div><!-- Ends the item holder div -->
 		
 

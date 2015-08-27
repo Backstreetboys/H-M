@@ -84,6 +84,10 @@ body {
 			z-index: 50;
 			display: none;
 			position: fixed;
+			a {
+				text-decoration: none;
+				color: red;
+			}
 			.added-item{
 				margin: 3px;
 				border: 1px solid #C2C2C2;
@@ -126,10 +130,6 @@ body {
 						outline: none;
 						border-top: 5px solid #D40000;
 					}
-					a {
-						text-decoration: none;
-						color: red;
-					}
 				}
 			}
 		}
@@ -148,7 +148,7 @@ body {
 			width: 2400px;
 			margin-left: -1200px;
 		}
-		.product-wrapper {
+		#product-wrapper {
 			width: 525px;
 			height: 625px;
 			display: inline-block;
