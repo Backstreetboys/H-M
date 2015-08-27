@@ -23,6 +23,7 @@
 <!-- Display all images with classes (classes added from functions.php) -->
 <div id="isotope">
 	<?php
+	$i = 0;
 	if(have_posts()){
 		while(have_posts()){
 			$price = get_post_meta( get_the_ID(), 'product_price', true ); ?>
@@ -31,13 +32,14 @@
 				the_post(); ?>
 				 <a class="post-link" rel="<?php the_ID(); ?>" href="<?php the_permalink(); ?>">
 				 	
-				 		<div id="product-wrapper" <?php post_class();?>>
+				 		<div id="index-item<?php echo $i ?>" class="product-wrapper" <?php post_class();?>>
 							<p id="index-title"><?= the_title(); ?></p>
-							<p id="index-price"><?php echo $price ?> kr</p>
+				 			<p id="index-price"><?php echo $price ?> kr</p>
 							<?php the_post_thumbnail(); ?>
 						</div>				
 				</a>
 		<?php
+		$i++;
 		}	
 	}
 	?>

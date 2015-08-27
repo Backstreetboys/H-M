@@ -26,7 +26,14 @@ get_header(); ?>
 				
 					<tr class="table-body">
 						<td><?php echo $result['name']; ?></td>
-						<td><?php echo $result['size']; ?></td>
+						<?php if(isset($result['size'])){ ?>
+
+							<td><?php echo $result['size']; ?></td>
+
+						<?php }else{ ?>
+
+						<?php } ?>
+						
 						<td><?php echo $result['price']; ?>kr</td>
 						<td id="table-button" itemid="<?= $i ?>"><button>remove X</button></td>
 					</tr>

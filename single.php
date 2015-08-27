@@ -40,19 +40,29 @@ while (have_posts()) {
 					<i class="fa fa-check fa-2x"></i>
 				</div>
 		<!-- The size selection form -->
-		<form id="purchase">
-			<label>Välj storlek:</label>
-			<select id="sizelist" form="purchase">
-				<option value="Small">S</option>
-				<option value="Medium">M</option>
-				<option value="Large">L</option>
-				<option value="XLarge">XL</option>
-			</select><br>
-			<!-- Submit button for adding the product to the Shopping bag -->
-			<button type="submit" id="btn-submit">
-				Lägg till i varukorgen<i class="fa fa-shopping-cart"></i>
-			</button>
-		</form>
+		<?php if(!in_category('assoserice', $_POST['id'])){ ?>
+			<form id="purchase">
+				<label>Välj storlek:</label>
+				<select id="sizelist" form="purchase">
+					<option value="Small">S</option>
+					<option value="Medium">M</option>
+					<option value="Large">L</option>
+					<option value="XLarge">XL</option>
+				</select><br>
+				<!-- Submit button for adding the product to the Shopping bag -->
+				<button type="submit" id="btn-submit">
+					Lägg till i varukorgen<i class="fa fa-shopping-cart"></i>
+				</button>
+			</form>
+		<?php }else{ ?>
+			<form id="purchase">
+				<!-- Submit button for adding the product to the Shopping bag -->
+				<button type="submit" id="btn-submit">
+					Lägg till i varukorgen<i class="fa fa-shopping-cart"></i>
+				</button>
+			</form>
+		<?php } ?>
+		
 	</div><!-- Ends product_info div -->
 	<?php
 

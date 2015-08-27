@@ -6,7 +6,7 @@ body {
 
 
 	#wrapper {
-		width: 80%;
+		width: 90%;
 		height: auto;
 		margin-top: 70px;
 		margin-left: auto;
@@ -48,7 +48,7 @@ body {
 
 		#header{
 			width: 100%;
-			height: 55px;
+			height: 65px;
 			top: 0;
 			background-color: white;
 			position: fixed;
@@ -56,8 +56,8 @@ body {
 			z-index: 75;
 			
 			#Header-logo{
-				width: 40px;
-				height: 50px;
+				width: 55px;
+				height: 65px;
 				display: block;
 				position: absolute;
 				margin-left: 48.5%;
@@ -68,8 +68,8 @@ body {
 				right: 0;
 				display: inline;
 				position: absolute;
-				margin-top: 2.5px;
-				margin-right: 5px;
+				margin-top: 7px;
+				margin-right: 7px;
 			}
 		}
 		#item-holder{
@@ -79,7 +79,7 @@ body {
 			overflow-y: scroll;
 			right: 0;
 			top: 0;
-			margin-top: 55px;
+			margin-top: 65px;
 			position: absolute;
 			z-index: 50;
 			display: none;
@@ -148,11 +148,11 @@ body {
 			width: 2400px;
 			margin-left: -1200px;
 		}
-		#product-wrapper {
-			width: 400px;
-			height: 500px;
+		.product-wrapper {
+			width: 525px;
+			height: 625px;
 			display: inline-block;
-			margin-left: 80px;
+			margin-left: 70px;
 			margin-bottom: 10px;
 			background-color: white;
 			box-shadow: 3px 3px 3px #C2C2C2;
@@ -177,8 +177,8 @@ body {
 				}
 				img{
 					margin-top: 32px;
-					height: 360px;
-					width: 286px;
+				//	height: 360px;
+				//	width: 286px;
 					margin-left: 38px;
 				}
 			}
@@ -339,55 +339,84 @@ body {
 
 			}
 		}
-		#receipt_option{
-			#receipt-header{
-				text-align: center;
-				font-family: helvetica;
-				font-size: 50px;
-			}
-			#receipt-text{
-				text-align: center;
-				font-family: helvetica;
-				font-size: 30px;
+		#receipt-option-outer{
+			display: table;
+			position: absolute;
+    		height: 90%;
+    		width: 90%;
+			#receipt-option-middle{
+				display: table-cell;
+    			vertical-align: middle;
+				#receipt-option-inner{
+					background-color: rgba(255,255,255,0.7);
+					min-height: 350px;
+					margin-left: auto;
+    				margin-right: auto;
+					#receipt-header{
+						text-align: center;
+						font-family: helvetica;
+						font-size: 50px;
+						margin-top: 5px;
+					}
+					#receipt-text{
+						text-align: center;
+						font-family: helvetica;
+						font-size: 30px;
 
-			}
-			#btn-option{
-				margin-right: auto;
-				margin-left: auto;
-				height: 110px;
-				width: 45%;
-				button{
-					margin-top: 25px;
-					margin-left: 20px;
-					//float: right;
-					height: 100px;
-					width: 200px;
-					background-color: #FF0000;
-					color: white;
-					font-size: 25px;
-					font-family: helvetica;
-					border-radius: 5px;
-					border: none;
-					text-decoration: none;
-					outline: none;
-					border-bottom: 5px solid #D40000;
-					border-left: 3px solid #D40000;
+					}
+					#btn-option{
+						margin-right: auto;
+						margin-left: auto;
+						height: 110px;
+						width: 45%;
+						button{
+							margin-top: 25px;
+							margin-left: 20px;
+							height: 100px;
+							width: 200px;
+							background-color: #FF0000;
+							color: white;
+							font-size: 25px;
+							font-family: helvetica;
+							border-radius: 5px;
+							border: none;
+							text-decoration: none;
+							outline: none;
+							border-bottom: 5px solid #D40000;
+							border-left: 3px solid #D40000;
+						}
+						button:active{
+							margin-top: 25px;
+							height: 100px;
+							width: 200px;
+							background-color: #FF0000;
+							color: white;
+							font-size: 25px;
+							font-family: helvetica;
+							border-radius: 5px;
+							border: none;
+							text-decoration: none;
+							outline: none;
+							border-top: 5px solid #D40000;
+							border-right: 3px solid #D40000;
+						}
+					}
 				}
-				button:active{
-					margin-top: 25px;
-					//float: right;
-					height: 100px;
-					width: 200px;
-					background-color: #FF0000;
-					color: white;
-					font-size: 25px;
-					font-family: helvetica;
-					border-radius: 5px;
-					border: none;
-					text-decoration: none;
-					outline: none;
-					border-top: 5px solid #D40000;
-					border-right: 3px solid #D40000;
+			}
+		}
+		#loding-outer{
+			display: table;
+			position: absolute;
+    		height: 100%;
+    		width: 90%;
+			#loding-middle{
+				display: table-cell;
+    			vertical-align: middle;
+				#loding-inner{
+					min-height: 350px;
+					margin-left: auto;
+    				margin-right: auto;
+
 				}
 			}
 		}
