@@ -13,10 +13,13 @@ body {
 		margin-right: auto;
 
 		#categories {
+			float: center;
 			height: 60px;
-			width: 100%;
+			width: 76%;
 			margin-top: 20px;
 			margin-bottom: 20px;
+			margin-right: auto;
+			margin-left: auto;
 
 			li {
 				width: 112px;
@@ -174,12 +177,6 @@ body {
 					text-decoration: none;
 					color: black;
 					border-bottom: 1px solid black;
-				}
-				img{
-					margin-top: 32px;
-				//	height: 360px;
-				//	width: 286px;
-					margin-left: 38px;
 				}
 			}
 
@@ -428,4 +425,72 @@ body {
         		width:100%;
 			}
 		}
+}
+				
+					
+				
+/*Stress hacks för index bilderna*/
+.index-item0{
+	img{
+		margin-top: 32px;
+		margin-left: 12%;
+		height: 450px;
+		width: 381px;
+	}
+}
+.index-item1{
+	img{
+		margin-top: 30px;
+		margin-left: 12%;
+		height: 480px;
+		width: 381px;
+	}
+}
+.index-item2{
+	img{
+		margin-top: 30px;
+		margin-left: 12%;
+		height: 480px;
+		width: 381px;
+	}
+}
+.index-item3{
+	img{
+		margin-top: 60px;
+		margin-left: 20%;
+		height: 380px;
+		width: 381px;
+	}
+}
+.index-item4{
+	img{
+		margin-top: 30px;
+		margin-left: 22%;
+		height: 480px;
+		width: 281px;
+	}
+}
+.index-item5{
+	img{
+		margin-top: 60px;
+		margin-left: 12%;
+		height: 340px;
+		width: 381px;
+	}
+}
+.index-item6{
+	img{
+		margin-top: 30px;
+		margin-left: 12%;
+		height: 480px;
+		width: 381px;
+	}
+}
+.index-item7{
+	img{
+		margin-top: 30px;
+		margin-left: 12%;
+		height: 480px;
+		width: 381px;
+	}
 }
