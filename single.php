@@ -40,7 +40,7 @@ while (have_posts()) {
 					<i class="fa fa-check fa-2x"></i>
 				</div>
 		<!-- The size selection form -->
-		<?php if(!in_category('assoserice', $_POST['id'])){ ?>
+		<?php if(!in_category('accessories' , $_POST['id'])){ ?>
 			<form id="purchase">
 				<label>Välj storlek:</label>
 				<select id="sizelist" form="purchase">

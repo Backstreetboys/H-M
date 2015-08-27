@@ -103,7 +103,7 @@ $("#isotope").isotope({
 						});
 
 				window.setTimeout(function(){
-		        	window.location.href = "http://localhost/terminsprojekt";
+		        	window.location.href = "http://localhost/gitmap/wordpress";
 		    	}, 8000);
 		    	
 			});
