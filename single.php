@@ -35,10 +35,13 @@ while (have_posts()) {
 			<!-- information about the product -->
 			<p class="product_text"><?php the_content(); ?></p>
 			<!-- the meta data that is the price -->
-			<p>Pris: <?php echo $price; ?> kr<p><br>
-			<i class="fa fa-check fa-2x"></i>
+			<p>Pris: <?php echo $price; ?> kr<p>
+				<div class="purchase_success">
+					<i class="fa fa-check fa-2x"></i>
+				</div>
 		<!-- The size selection form -->
 		<form id="purchase">
+			<label>Välj storlek:</label>
 			<select id="sizelist" form="purchase">
 				<option value="Small">S</option>
 				<option value="Medium">M</option>
