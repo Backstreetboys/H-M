@@ -45,12 +45,11 @@ get_header(); ?>
 			} ?>
 	</table>
 	<h1>Summa: <?php echo $sum ?></h1>
-
+	<div id="pay">
+		<a href="<?= get_template_directory_uri() ?>/loading">Pay <i class="fa fa-arrow-right"></i></a>
+	</div>
 </div>
-<div id="pay">
-		<a href="<?= get_template_directory_uri() ?>/loading">Betala</a>
 
-</div>
 <script type="text/javascript">
 
 var $ = jQuery;

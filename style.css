@@ -91,31 +91,36 @@ body #wrapper #item-holder {
 }
 /* line 87, scss/style.scss */
 body #wrapper #item-holder a {
+  float: right;
+  margin-right: 10px;
+  font-size: 15pt;
+  font-weight: bold;
+  font-family: helvetica;
   text-decoration: none;
-  color: red;
+  color: green;
 }
-/* line 91, scss/style.scss */
+/* line 96, scss/style.scss */
 body #wrapper #item-holder .added-item {
   margin: 3px;
   border: 1px solid #C2C2C2;
   height: 100px;
   box-shadow: 3px 3px 3px #C2C2C2;
 }
-/* line 96, scss/style.scss */
+/* line 101, scss/style.scss */
 body #wrapper #item-holder .added-item .item-info {
   float: left;
 }
-/* line 100, scss/style.scss */
+/* line 105, scss/style.scss */
 body #wrapper #item-holder .added-item .item-info ul li {
   list-style-type: none;
   font-family: helvetica;
 }
-/* line 106, scss/style.scss */
+/* line 111, scss/style.scss */
 body #wrapper #item-holder .added-item .remove-button {
   width: 188px;
-  margin-left: 88px;
+  margin-left: 85px;
 }
-/* line 109, scss/style.scss */
+/* line 114, scss/style.scss */
 body #wrapper #item-holder .added-item .remove-button button {
   margin-top: 25px;
   float: right;
@@ -128,7 +133,7 @@ body #wrapper #item-holder .added-item .remove-button button {
   outline: none;
   border-bottom: 5px solid #D40000;
 }
-/* line 121, scss/style.scss */
+/* line 126, scss/style.scss */
 body #wrapper #item-holder .added-item .remove-button button:active {
   margin-top: 25px;
   float: right;
@@ -141,7 +146,7 @@ body #wrapper #item-holder .added-item .remove-button button:active {
   outline: none;
   border-top: 5px solid #D40000;
 }
-/* line 137, scss/style.scss */
+/* line 142, scss/style.scss */
 body #wrapper #overlay {
   display: none;
   background-color: rgba(0, 0, 0, 0.8);
@@ -154,7 +159,7 @@ body #wrapper #overlay {
   width: 2400px;
   margin-left: -1200px;
 }
-/* line 151, scss/style.scss */
+/* line 156, scss/style.scss */
 body #wrapper #product-wrapper {
   width: 525px;
   height: 625px;
@@ -165,7 +170,7 @@ body #wrapper #product-wrapper {
   box-shadow: 3px 3px 3px #C2C2C2;
   border: 1px solid #C2C2C2;
 }
-/* line 160, scss/style.scss */
+/* line 165, scss/style.scss */
 body #wrapper #product-wrapper #index-title {
   margin-left: 10px;
   margin-left: 10px;
@@ -175,7 +180,7 @@ body #wrapper #product-wrapper #index-title {
   color: black;
   font-size: 25px;
 }
-/* line 169, scss/style.scss */
+/* line 174, scss/style.scss */
 body #wrapper #product-wrapper #index-price {
   margin-left: 10px;
   margin-right: 10px;
@@ -185,12 +190,12 @@ body #wrapper #product-wrapper #index-price {
   color: black;
   border-bottom: 1px solid black;
 }
-/* line 178, scss/style.scss */
+/* line 183, scss/style.scss */
 body #wrapper #product-wrapper img {
   margin-top: 32px;
   margin-left: 38px;
 }
-/* line 186, scss/style.scss */
+/* line 191, scss/style.scss */
 body #wrapper #single-box {
   border: solid 1px black;
   position: fixed;
@@ -203,33 +208,33 @@ body #wrapper #single-box {
   width: 800px;
   margin-left: -400px;
 }
-/* line 200, scss/style.scss */
+/* line 205, scss/style.scss */
 body #wrapper #single-box h1, body #wrapper #single-box p, body #wrapper #single-box label {
   font-family: helvetica;
 }
-/* line 203, scss/style.scss */
+/* line 208, scss/style.scss */
 body #wrapper #single-box .product_image {
   float: left;
   position: relative;
 }
-/* line 207, scss/style.scss */
+/* line 212, scss/style.scss */
 body #wrapper #single-box .product_info {
   float: left;
   position: relative;
   width: 300px;
   margin-left: 100px;
 }
-/* line 212, scss/style.scss */
+/* line 217, scss/style.scss */
 body #wrapper #single-box .product_info .purchase_success {
   height: 40px;
   width: 40px;
 }
-/* line 215, scss/style.scss */
+/* line 220, scss/style.scss */
 body #wrapper #single-box .product_info .purchase_success .fa-check {
   display: none;
   color: green;
 }
-/* line 220, scss/style.scss */
+/* line 225, scss/style.scss */
 body #wrapper #single-box .product_info #btn-submit {
   -moz-box-shadow: inset 0px -3px 7px 0px #29bbff;
   -webkit-box-shadow: inset 0px -3px 7px 0px #29bbff;
@@ -257,11 +262,11 @@ body #wrapper #single-box .product_info #btn-submit {
   text-decoration: none;
   text-shadow: 0px 1px 0px #263666;
 }
-/* line 247, scss/style.scss */
+/* line 252, scss/style.scss */
 body #wrapper #single-box .product_info #btn-submit .fa-shopping-cart {
   margin-left: 5px;
 }
-/* line 253, scss/style.scss */
+/* line 258, scss/style.scss */
 body #wrapper #inner {
   width: 100%;
   height: 400px;
@@ -271,7 +276,7 @@ body #wrapper #inner {
   left: 0;
   margin: -100px 0 0 0;
 }
-/* line 262, scss/style.scss */
+/* line 267, scss/style.scss */
 body #wrapper #carousel img {
   height: auto;
   border: none;
@@ -279,7 +284,7 @@ body #wrapper #carousel img {
   float: left;
   padding: 0 10px;
 }
-/* line 270, scss/style.scss */
+/* line 275, scss/style.scss */
 body #wrapper .loading {
   height: 200px;
   width: 200px;
@@ -287,43 +292,43 @@ body #wrapper .loading {
   background-repeat: none;
   margin: 0 auto;
 }
-/* line 277, scss/style.scss */
+/* line 282, scss/style.scss */
 body #wrapper .loading_text {
   width: 200px;
   height: 40px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 283, scss/style.scss */
+/* line 288, scss/style.scss */
 body #wrapper #checkout-list {
   background-color: rgba(255, 255, 255, 0.7);
   min-height: 400px;
 }
-/* line 286, scss/style.scss */
+/* line 291, scss/style.scss */
 body #wrapper #checkout-list .checkout-table {
   margin: 10px;
   width: 98%;
   text-align: left;
   border-collapse: collapse;
 }
-/* line 292, scss/style.scss */
+/* line 297, scss/style.scss */
 body #wrapper #checkout-list .checkout-table .table-head th {
   padding-bottom: 30px;
   font-family: helvetica;
   font-size: 30px;
 }
-/* line 298, scss/style.scss */
+/* line 303, scss/style.scss */
 body #wrapper #checkout-list .checkout-table .table-body {
   border-bottom: 1px solid black;
   margin-bottom: 20px;
 }
-/* line 301, scss/style.scss */
+/* line 306, scss/style.scss */
 body #wrapper #checkout-list .checkout-table .table-body td {
   font-family: helvetica;
   font-size: 20px;
   padding-top: 20px;
 }
-/* line 307, scss/style.scss */
+/* line 312, scss/style.scss */
 body #wrapper #checkout-list .checkout-table .table-body #table-button button {
   margin-top: 25px;
   height: 45px;
@@ -337,7 +342,7 @@ body #wrapper #checkout-list .checkout-table .table-body #table-button button {
   border-bottom: 5px solid #D40000;
   border-left: 2px solid #D40000;
 }
-/* line 321, scss/style.scss */
+/* line 326, scss/style.scss */
 body #wrapper #checkout-list .checkout-table .table-body #table-button button:active {
   margin-top: 25px;
   height: 45px;
@@ -351,46 +356,59 @@ body #wrapper #checkout-list .checkout-table .table-body #table-button button:ac
   border-top: 4px solid #D40000;
   border-right: 2px solid #D40000;
 }
-/* line 342, scss/style.scss */
+/* line 343, scss/style.scss */
+body #wrapper #checkout-list #pay {
+  float: right;
+  margin: 120px 20px 0px 0px;
+}
+/* line 347, scss/style.scss */
+body #wrapper #checkout-list #pay a {
+  font-size: 15pt;
+  font-weight: bold;
+  font-family: helvetica;
+  text-decoration: none;
+  color: green;
+}
+/* line 356, scss/style.scss */
 body #wrapper #receipt-option-outer {
   display: table;
   position: absolute;
   height: 90%;
   width: 90%;
 }
-/* line 347, scss/style.scss */
+/* line 361, scss/style.scss */
 body #wrapper #receipt-option-outer #receipt-option-middle {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 350, scss/style.scss */
+/* line 364, scss/style.scss */
 body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner {
   background-color: rgba(255, 255, 255, 0.7);
   min-height: 350px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 355, scss/style.scss */
+/* line 369, scss/style.scss */
 body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #receipt-header {
   text-align: center;
   font-family: helvetica;
   font-size: 50px;
   margin-top: 5px;
 }
-/* line 361, scss/style.scss */
+/* line 375, scss/style.scss */
 body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #receipt-text {
   text-align: center;
   font-family: helvetica;
   font-size: 30px;
 }
-/* line 367, scss/style.scss */
+/* line 381, scss/style.scss */
 body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #btn-option {
   margin-right: auto;
   margin-left: auto;
   height: 110px;
   width: 45%;
 }
-/* line 372, scss/style.scss */
+/* line 386, scss/style.scss */
 body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #btn-option button {
   margin-top: 25px;
   margin-left: 20px;
@@ -407,7 +425,7 @@ body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner
   border-bottom: 5px solid #D40000;
   border-left: 3px solid #D40000;
 }
-/* line 388, scss/style.scss */
+/* line 402, scss/style.scss */
 body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner #btn-option button:active {
   margin-top: 25px;
   height: 100px;
@@ -423,25 +441,25 @@ body #wrapper #receipt-option-outer #receipt-option-middle #receipt-option-inner
   border-top: 5px solid #D40000;
   border-right: 3px solid #D40000;
 }
-/* line 407, scss/style.scss */
+/* line 421, scss/style.scss */
 body #wrapper #loding-outer {
   display: table;
   position: absolute;
   height: 100%;
   width: 90%;
 }
-/* line 412, scss/style.scss */
+/* line 426, scss/style.scss */
 body #wrapper #loding-outer #loding-middle {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 415, scss/style.scss */
+/* line 429, scss/style.scss */
 body #wrapper #loding-outer #loding-middle #loding-inner {
   min-height: 350px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 425, scss/style.scss */
+/* line 439, scss/style.scss */
 body #page-not-found img {
   width: 100px;
   height: auto;
