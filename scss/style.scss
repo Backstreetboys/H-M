@@ -143,11 +143,11 @@ body {
 			width: 2400px;
 			margin-left: -1200px;
 		}
-		#product-wrapper {
-			width: 450px;
-			height: 550px;
+		.product-wrapper {
+			width: 525px;
+			height: 625px;
 			display: inline-block;
-			margin-left: 40px;
+			margin-left: 70px;
 			margin-bottom: 10px;
 			background-color: white;
 			box-shadow: 3px 3px 3px #C2C2C2;
@@ -172,8 +172,8 @@ body {
 				}
 				img{
 					margin-top: 32px;
-					height: 360px;
-					width: 286px;
+				//	height: 360px;
+				//	width: 286px;
 					margin-left: 38px;
 				}
 			}
@@ -358,7 +358,6 @@ body {
 						button{
 							margin-top: 25px;
 							margin-left: 20px;
-							//float: right;
 							height: 100px;
 							width: 200px;
 							background-color: #FF0000;
@@ -374,7 +373,6 @@ body {
 						}
 						button:active{
 							margin-top: 25px;
-							//float: right;
 							height: 100px;
 							width: 200px;
 							background-color: #FF0000;
@@ -389,6 +387,22 @@ body {
 							border-right: 3px solid #D40000;
 						}
 					}
+				}
+			}
+		}
+		#loding-outer{
+			display: table;
+			position: absolute;
+    		height: 100%;
+    		width: 90%;
+			#loding-middle{
+				display: table-cell;
+    			vertical-align: middle;
+				#loding-inner{
+					min-height: 350px;
+					margin-left: auto;
+    				margin-right: auto;
+
 				}
 			}
 		}

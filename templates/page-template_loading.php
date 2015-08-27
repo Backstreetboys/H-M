@@ -8,9 +8,18 @@
  */
 get_header(); 
 ?>
-<div class="loading">
+<div id="loding-outer">
+	<div id="loding-middle">
+		<div id="loding-inner">
+
+			<div class="loading">
+			</div>
+			<p class="loading_text">Din betalning behandlas.</p>
+			
+		</div>
+	</div>
 </div>
-<p class="loading_text">Din betalning behandlas.</p>
+
 <script type="text/javascript">
 var $ = jQuery;
 $(window).load(function() {
