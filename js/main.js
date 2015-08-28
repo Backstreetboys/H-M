@@ -116,5 +116,8 @@ $("#isotope").isotope({
 			showConfirmButton: false,
 			timer: 2000
 		});
+			window.setTimeout(function(){
+				window.location.href = "http://localhost/gitmap/wordpress";
+			}, 8000);
 	});
 });
