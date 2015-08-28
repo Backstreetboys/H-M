@@ -12,7 +12,10 @@ get_header(); ?>
 		<div id="receipt-option-inner">
 
 			<h1 id="receipt-header">Thanks for the purchase</h1>
-			<p id="receipt-text">Please choose whether you want the receipt printed or on your email.</p>
+			<p id="receipt-text">Tack för ditt köp! Välj nedan om du vill ha ditt kvitto utskrivet eller skickat till din email. Ta med dig kvittot till bakluckan för att hämta ut dina varor. 
+Ha en fortsatt underbar festival! 
+// H&M 
+.</p>
 			<div id="btn-option">
 				<button id="btn-paper">Paper</button><button id="btn-email">Email</button>
 			</div>

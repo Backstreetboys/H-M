@@ -36,7 +36,6 @@ session_start();
 
 <body <?php body_class(); ?>>
 	
-
 	<div id="wrapper"><!-- This div wrapps the hole site -->
 		<div id="header"><!-- This div wrappes everything in header -->
 
@@ -53,7 +52,6 @@ session_start();
 			<?php }else{
 
 			} ?>
-			
 			
 		</div><!-- Wrapper div ends -->
 		<!-- This div contains all the addes products that will be shown when you push the shopping bag icon -->
